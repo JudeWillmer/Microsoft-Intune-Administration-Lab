@@ -12,7 +12,7 @@ Throughout this project, I enrolled and managed **Windows devices**, configured 
 
 - Microsoft Intune
 - Microsoft Entra ID
-- Windows 11
+- Windows 10 Pro
 - Microsoft Defender Antivirus
 - BitLocker
 - Microsoft Intune Admin Center
