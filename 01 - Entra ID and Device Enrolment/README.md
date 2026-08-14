@@ -62,7 +62,7 @@ Review **Microsoft Entra ID** sign-in activity to verify user authentication and
 
 ## Implementation
 
-I signed in using the newly created **Hardy D'Souza** account to generate authentication activity within the **JayTech Ltd** environment. The initial sign-in event was recorded as **Interrupted** because the temporary password needed to be changed before the authentication process could continue.
+I signed in using the newly created **Hardy Souza** account to generate authentication activity within the **JayTech Ltd** environment. The initial sign-in event was recorded as **Interrupted** because the temporary password needed to be changed before the authentication process could continue.
 
 After changing the password, I successfully signed in with the account. I then reviewed the user's **sign-in logs** within Microsoft Entra ID and examined the successful authentication event to confirm the sign-in status and review the available authentication information.
 
@@ -74,7 +74,7 @@ After changing the password, I successfully signed in with the account. I then r
 Microsoft Intune Admin Center
 → Users
 → All users
-→ Hardy D'Souza
+→ Hardy Souza
 → Sign-in logs
 → Select Sign-In Event
 → Activity Details
@@ -90,10 +90,10 @@ The **Microsoft Entra ID** sign-in logs successfully recorded the user's authent
 
 ## Screenshot
 
-**Figure 1:** **Microsoft Entra ID sign-in logs** showing the initial **Interrupted** event followed by the successful sign-in for **Hardy D'Souza**.
+**Figure 1:** **Microsoft Entra ID sign-in logs** showing the initial **Interrupted** event followed by the successful sign-in for **Hardy Souza**.
 
 <img width="1919" height="912" alt="02 – Reviewing User Sign-In Logs" src="https://github.com/user-attachments/assets/7f278520-7570-4730-b823-70f57c108747" />
 
-**Figure 2:** **Activity Details** confirming the successful authentication event and displaying the associated sign-in information for **Hardy D'Souza**.
+**Figure 2:** **Activity Details** confirming the successful authentication event and displaying the associated sign-in information for **Hardy Souza**.
 
 <img width="1918" height="913" alt="03 – Reviewing User Sign-In Logs" src="https://github.com/user-attachments/assets/f74cc847-af54-425a-871d-bc8f365f9ee3" />
