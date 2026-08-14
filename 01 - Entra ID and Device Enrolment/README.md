@@ -46,7 +46,7 @@ The **Microsoft Entra ID** user account was successfully created and configured 
 
 ---
 
-## Screenshots
+## Screenshot
 
 **Figure 1:** Microsoft Entra ID user configured with **IT Support Technician**, **JayTech Ltd**, and **IT department** attributes.
 
