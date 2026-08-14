@@ -1,3 +1,11 @@
+# Entra ID and Device Enrolment
+
+## Overview
+
+This section covers the core **Microsoft Entra ID** and **Microsoft Intune** tasks I completed to prepare users and devices for cloud-based management. I created and managed **user accounts**, configured **security groups** for policy targeting, reviewed **sign-in activity**, and enrolled a **Windows 10 Pro** device into Microsoft Intune. These tasks demonstrate fundamental **identity and device management** skills commonly used within an IT Support environment.
+
+---
+
 # Task 1 - Creating and Configuring a Microsoft Entra ID User
 
 ## Objective
@@ -42,4 +50,4 @@ The **Microsoft Entra ID** user account was successfully created and configured 
 
 **Figure 1:** Microsoft Entra ID user configured with **IT Support Technician**, **JayTech Ltd**, and **IT department** attributes.
 
-<img width="1919" height="912" alt="01 – Creating and Configuring a Microsoft Entra ID User" src="https://github.com/user-attachments/assets/49588f83-b6a4-4a7b-85c1-0e89fc49415b" />
+<img width="1919" height="912" alt="01 – Creating and Configuring a Microsoft Entra ID User" src="https://github.com/user-attachments/assets/baec6a2e-cc32-4704-8f95-bf3a357df539" />
