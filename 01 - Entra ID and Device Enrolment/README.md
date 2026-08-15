@@ -1,1 +1,109 @@
+# Entra ID and Device Enrolment
 
+## Overview
+
+This section covers the core **Microsoft Entra ID** identity and device enrolment tasks I completed within the **Microsoft Intune Administration Lab**. I created and configured a user account, reviewed **sign-in activity**, configured device settings, created security groups for policy targeting, and enrolled a **Windows 10 Pro** device into **Microsoft Intune**.
+
+These tasks demonstrate practical **IT Support** skills involving cloud identity administration, user authentication, group management, device registration, and endpoint enrolment within a Microsoft cloud environment.
+
+---
+
+# Task 1 - Creating and Configuring a Microsoft Entra ID User
+
+## Objective
+
+Create and configure a **Microsoft Entra ID** user account with appropriate organisational information for a new employee within the **JayTech Ltd** environment.
+
+---
+
+## Implementation
+
+I created a new **Microsoft Entra ID** user account for **Hardy Souza**, who was joining the fictional **JayTech Ltd** environment as an **IT Support Technician**.
+
+I configured the account as a **Member** and added the user's job title, company, and department information. The **Department** attribute was set to **IT**, providing organisational information that can later be used for group membership and policy targeting.
+
+---
+
+## Navigation
+
+```text
+Microsoft Entra Admin Center
+→ Entra ID
+→ Users
+→ All users
+→ New user
+→ Create new user
+→ Configure User Principal Name and Display Name
+→ Properties
+→ Configure Identity Information
+→ Configure Job Information
+→ Review + create
+→ Create
+```
+
+---
+
+## Outcome
+
+The **Microsoft Entra ID** user account for **Hardy Souza** was successfully created and configured as an **IT Support Technician** within the **IT department** of **JayTech Ltd**.
+
+---
+
+## Screenshot
+
+**Figure 1:** Configuring the **Microsoft Entra ID** user with **IT Support Technician**, **JayTech Ltd**, and **IT department** organisational information.
+
+<img width="1919" height="912" alt="01 – Creating and Configuring a Microsoft Entra ID User" src="https://github.com/user-attachments/assets/3bbe2c6e-ad4e-4ffb-85cb-84d7cac8edd3" />
+
+---
+
+# Task 2 - Reviewing Microsoft Entra ID Sign-in Logs
+
+## Objective
+
+Review **Microsoft Entra ID sign-in logs** to verify a user's authentication activity and investigate the status of recent sign-in attempts.
+
+---
+
+## Implementation
+
+I signed in using the newly created **Hardy Souza** account and then reviewed the user's **interactive sign-in logs** from the **Microsoft Entra Admin Center**.
+
+The logs recorded an initial **Interrupted** sign-in while the new account completed its required authentication process, followed by a **Successful** sign-in. I then opened the successful event to review its authentication details and confirm that access had been completed successfully.
+
+The event details also showed that **multifactor authentication** was required and that the MFA requirement had been satisfied by a claim in the authentication token.
+
+---
+
+## Navigation
+
+```text
+Microsoft Entra Admin Center
+→ Entra ID
+→ Users
+→ All users
+→ Hardy Souza
+→ Sign-in logs
+→ Review User sign-ins (interactive)
+→ Select Successful Sign-in Event
+→ Activity Details: Sign-ins
+→ Basic info
+```
+
+---
+
+## Outcome
+
+The **Microsoft Entra ID sign-in logs** confirmed a successful authentication for **Hardy Souza**. Reviewing the individual event provided additional authentication information that could be used by an **IT Support Technician** when investigating user sign-in and access issues.
+
+---
+
+## Screenshot
+
+**Figure 2:** Reviewing **Hardy Souza's interactive sign-in activity**, showing the initial **Interrupted** event followed by a **Successful** authentication.
+
+<img width="1919" height="914" alt="02 – Reviewing User Sign-In Logs" src="https://github.com/user-attachments/assets/1a3bb924-aeda-4219-9b98-3dbdfda58811" />
+
+**Figure 3:** Reviewing the successful sign-in **Activity Details**, confirming **Status: Success** and the associated **multifactor authentication** requirement.
+
+<img width="1919" height="913" alt="03 – Reviewing User Sign-In Logs" src="https://github.com/user-attachments/assets/a2e0386f-78e5-4c6b-b084-f77358e40c19" />
