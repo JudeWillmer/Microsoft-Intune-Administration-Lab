@@ -55,8 +55,6 @@ The **Microsoft Entra ID** user account for **Hardy Souza** was successfully cre
 
 <img width="1919" height="912" alt="01 – Creating and Configuring a Microsoft Entra ID User" src="https://github.com/user-attachments/assets/3bbe2c6e-ad4e-4ffb-85cb-84d7cac8edd3" />
 
----
-
 # Task 2 - Reviewing Microsoft Entra ID Sign-in Logs
 
 ## Objective
