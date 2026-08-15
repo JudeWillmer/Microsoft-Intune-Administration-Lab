@@ -180,7 +180,8 @@ Microsoft Entra Admin Center
 → Group type: Security
 → Group name: IT Department
 → Membership type: Assigned
-→ Add Owner: Jude Willmer
+→ Add Owner
+→ Select Jude Willmer
 → Add Members
 → Select Hardy Souza
 → Select
