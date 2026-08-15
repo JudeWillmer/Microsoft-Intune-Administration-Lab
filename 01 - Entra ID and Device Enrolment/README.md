@@ -150,3 +150,57 @@ The **Microsoft Entra ID** device settings were successfully reviewed and confir
 **Figure 4:** **Microsoft Entra join and registration settings** configured for the **JayTech Ltd** environment.
 
 <img width="1918" height="915" alt="04 – Configuring Microsoft Entra Device Settings" src="https://github.com/user-attachments/assets/dc7ffb9c-17b7-4159-9cff-c23d2df4e3c5" />
+
+# Task 4 - Creating and Managing a Microsoft Entra ID Security Group
+
+## Objective
+
+Create an **assigned security group** in **Microsoft Entra ID** and add the appropriate user as a member to support group-based access and future **Microsoft Intune** policy assignments.
+
+---
+
+## Implementation
+
+I created a new **Security** group named **IT Department** within the **JayTech Ltd** Microsoft Entra ID environment and configured the membership type as **Assigned**.
+
+I assigned **Jude Willmer** as the group owner and manually added **Hardy Souza** as a member of the group. This provides a central method of grouping IT department users rather than managing access and future policy assignments individually.
+
+Using security groups in this way will also allow the **IT Department** group to be used for targeted **Microsoft Intune** configurations and application deployments later in the environment.
+
+---
+
+## Navigation
+
+```text
+Microsoft Entra Admin Center
+→ Entra ID
+→ Groups
+→ All groups
+→ New group
+→ Group type: Security
+→ Group name: IT Department
+→ Membership type: Assigned
+→ Add Owner: Jude Willmer
+→ Add Members
+→ Select Hardy Souza
+→ Select
+→ Create
+```
+
+---
+
+## Outcome
+
+The **IT Department** security group was successfully created in **Microsoft Entra ID** with **Assigned** membership. **Jude Willmer** was configured as the group owner and **Hardy Souza** was assigned as a member, establishing a group that can be used for centralised access management and future **Microsoft Intune** targeting.
+
+---
+
+## Screenshot
+
+**Figure 5:** **Hardy Souza** selected as a member of the **IT Department** security group during group creation.
+
+<img width="1919" height="915" alt="05 – Creating and Managing a Microsoft Entra ID Security Group" src="https://github.com/user-attachments/assets/e266a37b-c635-4590-84dd-7874d860fbe5" />
+
+**Figure 6:** The **IT Department** security group successfully created in **Microsoft Entra ID** with the membership type set to **Assigned**.
+
+<img width="1919" height="912" alt="06 – Creating and Managing a Microsoft Entra ID Security Group" src="https://github.com/user-attachments/assets/6268728c-314e-4889-a31a-f65449ba8c0a" />
