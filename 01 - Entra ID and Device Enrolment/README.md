@@ -107,3 +107,48 @@ The **Microsoft Entra ID sign-in logs** confirmed a successful authentication fo
 **Figure 3:** Reviewing the successful sign-in **Activity Details**, confirming **Status: Success** and the associated **multifactor authentication** requirement.
 
 <img width="1919" height="913" alt="03 – Reviewing User Sign-In Logs" src="https://github.com/user-attachments/assets/a2e0386f-78e5-4c6b-b084-f77358e40c19" />
+
+# Task 3 - Configuring Microsoft Entra Device Settings
+
+## Objective
+
+Review and configure **Microsoft Entra ID** device settings to control how users can join devices to the organisation and prepare the environment for future **Microsoft Intune** device enrolment.
+
+---
+
+## Implementation
+
+I reviewed the **Microsoft Entra join and registration settings** within the **Microsoft Entra admin center** to confirm that users are permitted to join devices to the **JayTech Ltd** environment.
+
+Device joining was available to **All users**, while the maximum number of devices permitted per user was set to **50**. I also reviewed the existing **Multifactor Authentication (MFA)** requirement for device registration and joining, which was currently set to **No**.
+
+These settings establish the **Microsoft Entra ID** device join configuration that will support the onboarding and management of Windows devices through **Microsoft Intune** later in the lab.
+
+---
+
+## Navigation
+
+```text
+Microsoft Entra Admin Center
+→ Entra ID
+→ Devices
+→ Device settings
+→ Microsoft Entra join and registration settings
+→ Review Users may join devices to Microsoft Entra
+→ Review Multifactor Authentication requirement
+→ Review Maximum number of devices per user
+```
+
+---
+
+## Outcome
+
+The **Microsoft Entra ID** device settings were successfully reviewed and confirmed, with users permitted to join devices to the **JayTech Ltd** environment. The tenant is now prepared for the later onboarding and management of Windows devices through **Microsoft Intune**.
+
+---
+
+## Screenshot
+
+**Figure 4:** **Microsoft Entra join and registration settings** configured for the **JayTech Ltd** environment.
+
+<img width="1918" height="915" alt="04 – Configuring Microsoft Entra Device Settings" src="https://github.com/user-attachments/assets/dc7ffb9c-17b7-4159-9cff-c23d2df4e3c5" />
