@@ -241,7 +241,7 @@ Microsoft Entra Admin Center
 → Group type: Security
 → Group name: IT Department - Dynamic
 → Membership type: Dynamic User
-→ Select Owner
+→ Add Owner
 → Select Jude Willmer
 → Edit dynamic query
 → Property: department
