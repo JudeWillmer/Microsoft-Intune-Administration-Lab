@@ -205,3 +205,65 @@ The **IT Department** security group was successfully created in **Microsoft Ent
 **Figure 6:** The **IT Department** security group successfully created in **Microsoft Entra ID** with the membership type set to **Assigned**.
 
 <img width="1919" height="912" alt="06 – Creating and Managing a Microsoft Entra ID Security Group" src="https://github.com/user-attachments/assets/6268728c-314e-4889-a31a-f65449ba8c0a" />
+
+# Task 5 - Creating a Dynamic Security Group
+
+## Objective
+
+Create a **dynamic security group** in **Microsoft Entra ID** that automatically manages membership based on a user's **department** attribute.
+
+---
+
+## Implementation
+
+I created a **Security** group named **IT Department - Dynamic** and configured the membership type as **Dynamic User**.
+
+I then created a **dynamic membership rule** using the **department** attribute. The rule automatically includes users whose department is set to **IT**, removing the need to manually add eligible users to the group.
+
+The dynamic membership rule used was:
+
+```text
+(user.department -eq "IT")
+```
+
+This provides a more automated approach to group management, as membership can update based on changes made to user attributes within **Microsoft Entra ID**.
+
+---
+
+## Navigation
+
+```text
+Microsoft Entra Admin Center
+→ Entra ID
+→ Groups
+→ All groups
+→ New group
+→ Group type: Security
+→ Group name: IT Department - Dynamic
+→ Membership type: Dynamic User
+→ Select Owner
+→ Edit dynamic query
+→ Property: department
+→ Operator: Equals
+→ Value: IT
+→ Save
+→ Create
+```
+
+---
+
+## Outcome
+
+The **IT Department - Dynamic** security group was successfully created with **Dynamic User** membership. Users whose **department** attribute is set to **IT** can now be automatically included in the group through the configured **dynamic membership rule**, reducing the need for manual membership management.
+
+---
+
+## Screenshot
+
+**Figure 1:** Creating the **IT Department - Dynamic** security group with **Dynamic User** membership in **Microsoft Entra ID**.
+
+<img width="1919" height="912" alt="07 – Creating a Dynamic Security Group" src="https://github.com/user-attachments/assets/04a0d1d0-1c39-429d-814e-372df4f728bb" />
+
+**Figure 2:** Configuring the **dynamic membership rule** to automatically include users whose **department** equals **IT**.
+
+<img width="1918" height="914" alt="08 – Creating a Dynamic Security Group" src="https://github.com/user-attachments/assets/e06245d0-a8cd-4654-a3d0-8d805872316f" />
