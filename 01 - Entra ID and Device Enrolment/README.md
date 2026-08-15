@@ -242,6 +242,7 @@ Microsoft Entra Admin Center
 → Group name: IT Department - Dynamic
 → Membership type: Dynamic User
 → Select Owner
+→ Select Jude Willmer
 → Edit dynamic query
 → Property: department
 → Operator: Equals
