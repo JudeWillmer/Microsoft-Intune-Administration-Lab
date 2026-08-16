@@ -37,7 +37,7 @@ Throughout this project, I enrolled and managed **Windows devices**, configured 
 
 ### 📁 01 - Entra ID and Device Enrolment
 
-Configure Microsoft Entra ID groups and enrol Windows devices into Microsoft Intune for centralised endpoint management.
+Configure Microsoft Entra ID users, groups, and device settings before enrolling a Windows endpoint into Microsoft Intune for centralised management.
 
 ### 📁 02 - Device Configuration and Compliance
 
