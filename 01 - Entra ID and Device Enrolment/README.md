@@ -279,13 +279,9 @@ Enrol a **Windows 10 Pro device** into **Microsoft Intune** using a standard use
 
 ## Implementation
 
-I configured **automatic MDM enrolment** in Microsoft Intune to allow users within the targeted **IT Department** security group to enrol Windows devices into Intune.
+I configured **automatic MDM enrolment** in Microsoft Intune to allow users within the targeted **IT Department** security group to enrol Windows devices into Intune. On the Windows 10 Pro virtual machine **CLIENT01**, I opened **Access work or school** and connected the device using the Microsoft Entra ID account for **Hardy Souza**.
 
-On the Windows 10 Pro virtual machine **CLIENT01**, I opened **Access work or school** and connected the device using the Microsoft Entra ID account for **Hardy Souza**.
-
-The work account was successfully connected to the device, allowing **CLIENT01** to enrol with Microsoft Intune.
-
-I then accessed the **Microsoft Intune Admin Center** and verified the device under **Devices > All devices**.
+The work account was successfully connected to the device, allowing **CLIENT01** to enrol with Microsoft Intune. I then accessed the **Microsoft Intune Admin Center** and verified the device under **Devices > All devices**.
 
 The device appeared successfully as **CLIENT01**, with Microsoft Intune listed as the management authority and **Hardy Souza** shown as the primary user.
 
