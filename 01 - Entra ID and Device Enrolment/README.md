@@ -273,31 +273,23 @@ The **IT Department - Dynamic** security group was successfully created with **D
 
 ## Objective
 
-Enrol the **Windows 10 Pro CLIENT01 workstation** into **Microsoft Intune** using the **Hardy Souza** Microsoft Entra ID account and verify that the device is successfully managed by Intune.
+Enrol a **Windows 10 Pro device** into **Microsoft Intune** using a standard user account and verify that the endpoint is successfully managed through the **Microsoft Intune Admin Center**.
 
 ---
 
 ## Implementation
 
-I configured **automatic MDM enrolment** within Microsoft Intune and set the **MDM user scope** to **Some**, targeting the previously created **IT Department** security group.
+I configured **automatic MDM enrolment** in Microsoft Intune to allow users within the targeted **IT Department** security group to enrol Windows devices into Intune.
 
-As **Hardy Souza** was a member of the **IT Department** group, his account was included within the configured MDM enrolment scope.
+On the Windows 10 Pro virtual machine **CLIENT01**, I opened **Access work or school** and connected the device using the Microsoft Entra ID account for **Hardy Souza**.
 
-During the initial enrolment attempt, the device failed to complete the process and returned an error from the **MDM terms of use page**. I investigated the user configuration and identified that the **Hardy Souza** account did not have an appropriate Microsoft 365 licence assigned.
+The work account was successfully connected to the device, allowing **CLIENT01** to enrol with Microsoft Intune.
 
-I assigned **Microsoft 365 Business Premium** to Hardy Souza and retried the enrolment.
+I then accessed the **Microsoft Intune Admin Center** and verified the device under **Devices > All devices**.
 
-On **CLIENT01**, I navigated to **Access work or school** and connected the device using:
+The device appeared successfully as **CLIENT01**, with Microsoft Intune listed as the management authority and **Hardy Souza** shown as the primary user.
 
-```text
-HardySouza@JayTechLtd.onmicrosoft.com
-```
-
-The account successfully connected and the workstation subsequently appeared within the **Microsoft Intune Admin Center**.
-
-I then verified the device under **Devices > All devices**, where CLIENT01 displayed **Intune** as its management authority and **Compliant** as its compliance status.
-
-The device was also associated with **Hardy Souza** as the primary user.
+The device also reported a **Compliant** status, confirming that the endpoint was successfully enrolled and communicating with Microsoft Intune.
 
 ---
 
@@ -313,38 +305,39 @@ Microsoft Intune Admin Center
 → Select group: IT Department
 → Save
 
-Windows 10 CLIENT01
+Windows 10 Pro - CLIENT01
 → Settings
 → Accounts
 → Access work or school
 → Connect
-→ Enter: HardySouza@JayTechLtd.onmicrosoft.com
-→ Authenticate using Hardy Souza
+→ Enter Hardy Souza's Microsoft Entra ID account
 → Complete connection
 
 Microsoft Intune Admin Center
 → Devices
 → All devices
 → CLIENT01
-→ Verify Managed by: Intune
-→ Verify Compliance: Compliant
-→ Verify Primary user: Hardy Souza
+→ Verify Intune management and compliance status
 ```
 
 ---
 
 ## Outcome
 
-The **CLIENT01** Windows 10 Pro workstation was successfully enrolled into **Microsoft Intune** and appeared within the Intune device inventory.
+The **CLIENT01** Windows 10 Pro endpoint was successfully enrolled into **Microsoft Intune**.
 
-The device reported **Intune** as its management authority, displayed a **Compliant** status and showed **Hardy Souza** as the primary user.
+The device is now visible within the Microsoft Intune Admin Center, is **managed by Intune**, has **Hardy Souza** associated as its primary user, and reports a **Compliant** status.
 
-The enrolment process also provided practical troubleshooting experience, as I identified that the Hardy Souza account initially lacked the required Microsoft 365 licence and resolved the issue by assigning **Microsoft 365 Business Premium** before successfully completing the enrolment.
+This demonstrates the process of onboarding a Windows endpoint into a cloud-based device management environment and verifying successful Intune management.
 
 ---
 
 ## Screenshot
 
-**Figure 1:** Connecting the **Hardy Souza** Microsoft Entra ID work account to the **CLIENT01** Windows 10 Pro workstation.
+**Figure 1:** Windows 10 Pro **Access work or school** showing **Hardy Souza's Microsoft Entra ID work account successfully connected** to CLIENT01.
 
-**Figure 2:** Verifying **CLIENT01** within **Microsoft Intune > Devices > All devices**, showing the device as **Managed by Intune**, **Compliant**, and associated with **Hardy Souza**.
+<img width="1919" height="914" alt="09 – Enrolling a Windows 10 Pro Device into Microsoft Intune" src="https://github.com/user-attachments/assets/1d88a524-8542-441f-beb3-e1e64d8ba544" />
+
+**Figure 2:** **Microsoft Intune Admin Center > Devices > All devices** showing **CLIENT01** successfully enrolled, **managed by Intune**, associated with **Hardy Souza**, and reporting a **Compliant** status.
+
+<img width="1919" height="914" alt="10 – Enrolling a Windows 10 Pro Device into Microsoft Intune" src="https://github.com/user-attachments/assets/f9be9576-e471-4050-958f-0ff070c53a86" />
