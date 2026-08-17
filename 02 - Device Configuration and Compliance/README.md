@@ -1,4 +1,4 @@
-# 02 - Device Configuration and Compliance
+# Device Configuration and Compliance
 
 ## Overview
 
