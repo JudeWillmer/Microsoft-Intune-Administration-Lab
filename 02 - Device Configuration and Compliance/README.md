@@ -151,6 +151,12 @@ This confirmed the complete configuration process from **central policy creation
 
 **Figure 1:** CLIENT01 displaying **Managed by JayTech** and confirming that the Microsoft Intune device synchronisation completed successfully.
 
+<img width="1919" height="911" alt="03 – Verifying Intune Policy Deployment on CLIENT01" src="https://github.com/user-attachments/assets/25e04d20-aac9-46c2-a4b3-ba0dbfc3450b" />
+
 **Figure 2:** The **Windows 10-11 - User Experience Configuration** profile reporting **Succeeded: 1**, with **0 errors** and **0 conflicts**. The deployed managed favourites are also visible in Microsoft Edge on CLIENT01.
 
+<img width="1919" height="913" alt="04 – Verifying Intune Policy Deployment on CLIENT01" src="https://github.com/user-attachments/assets/d88f9e33-b3ff-4b4d-9a98-be2386be2f8b" />
+
 **Figure 3:** The deployed Microsoft Edge configuration in Microsoft Intune showing **Configure favorites: Enabled**, the **JayTech Resources** managed favourites configuration, and **Enable favorites bar: Enabled**.
+
+<img width="1919" height="914" alt="05 – Verifying Intune Policy Deployment on CLIENT01" src="https://github.com/user-attachments/assets/d79d055f-24bc-4f56-a704-163d723b0f91" />
