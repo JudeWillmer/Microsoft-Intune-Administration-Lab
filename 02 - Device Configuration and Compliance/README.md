@@ -85,3 +85,72 @@ The **Windows 10-11 - User Experience Configuration** profile was successfully c
 **Figure 2:** The completed **Windows 10-11 - User Experience Configuration** profile displayed in **Microsoft Intune**.
 
 <img width="1919" height="913" alt="02 – Creating a Windows Device Configuration Profile" src="https://github.com/user-attachments/assets/7ff2bcfa-0823-4e86-9cb2-5cea18da32b1" />
+
+# Task 2 - Verifying Intune Policy Deployment on CLIENT01
+
+## Objective
+
+Verify that the **Windows 10-11 - User Experience Configuration** profile was successfully deployed from **Microsoft Intune** to **CLIENT01**, and confirm that the managed **Microsoft Edge favourites** were applied to the endpoint.
+
+---
+
+## Implementation
+
+After creating and assigning the **Windows 10-11 - User Experience Configuration** profile, I verified that **CLIENT01** was communicating successfully with **Microsoft Intune**.
+
+On CLIENT01, I opened the device management connection and confirmed that the device displayed **Managed by JayTech**. I then manually synchronised the device with Microsoft Intune to request the latest policies and configuration settings.
+
+After the synchronisation completed successfully, I opened **Microsoft Edge** and confirmed that the managed favourites had been deployed to the favourites bar, including the **JayTech Resources** folder and Microsoft 365 shortcut.
+
+I then returned to the **Microsoft Intune Admin Center** and reviewed the configuration profile deployment status. The profile reported **Succeeded: 1**, with **0 errors**, **0 conflicts**, **0 not applicable**, and **0 in progress**.
+
+I also reviewed the deployed configuration and confirmed that **Configure favorites** and **Enable favorites bar** were enabled, with the **JayTech Resources** managed favourites configuration present.
+
+---
+
+## Navigation
+
+```text
+CLIENT01
+→ Settings
+→ Accounts
+→ Access work or school
+→ Workplace or school account
+→ Info
+→ Managed by JayTech
+→ Sync
+
+Microsoft Edge
+→ Verify JayTech Resources managed favourites
+
+Microsoft Intune Admin Center
+→ Devices
+→ Configuration
+→ Windows 10-11 - User Experience Configuration
+→ Device and user check-in status
+→ Verify Succeeded: 1
+→ Configuration settings
+→ Microsoft Edge
+→ Configure favorites: Enabled
+→ Enable favorites bar: Enabled
+```
+
+---
+
+## Outcome
+
+The **Windows 10-11 - User Experience Configuration** profile was successfully received and applied by **CLIENT01**.
+
+The endpoint successfully synchronised with Microsoft Intune, the managed Microsoft Edge favourites became visible on the device, and Intune reported **Succeeded: 1** with **0 errors** and **0 conflicts**.
+
+This confirmed the complete configuration process from **central policy creation and device assignment in Intune** through to **successful deployment and application on CLIENT01**.
+
+---
+
+## Screenshots
+
+**Figure 1:** CLIENT01 displaying **Managed by JayTech** and confirming that the Microsoft Intune device synchronisation completed successfully.
+
+**Figure 2:** The **Windows 10-11 - User Experience Configuration** profile reporting **Succeeded: 1**, with **0 errors** and **0 conflicts**. The deployed managed favourites are also visible in Microsoft Edge on CLIENT01.
+
+**Figure 3:** The deployed Microsoft Edge configuration in Microsoft Intune showing **Configure favorites: Enabled**, the **JayTech Resources** managed favourites configuration, and **Enable favorites bar: Enabled**.
