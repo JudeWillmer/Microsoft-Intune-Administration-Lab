@@ -2,7 +2,9 @@
 
 ## Overview
 
-This section focuses on centrally managing device settings and security requirements using **Microsoft Intune**. Configuration profiles and compliance policies are used to standardise Windows device settings, enforce security requirements, and apply appropriate controls to managed iOS/iPadOS devices.
+This section covers the core **device configuration and compliance** tasks I completed within the **Microsoft Intune Administration Lab**. I created and assigned a **Windows configuration profile**, verified that the configured settings were successfully deployed to a managed endpoint, created a **Windows compliance policy**, and reviewed the device's compliance status within **Microsoft Intune**.
+
+These tasks demonstrate practical **IT Support** skills involving centralised device configuration, policy deployment, endpoint compliance, device monitoring, and verifying that managed Windows devices meet organisational requirements.
 
 ---
 
