@@ -161,11 +161,11 @@ This confirmed the complete configuration process from **central policy creation
 
 <img width="1919" height="914" alt="05 – Verifying Intune Policy Deployment on CLIENT01" src="https://github.com/user-attachments/assets/d79d055f-24bc-4f56-a704-163d723b0f91" />
 
-# Task 3 - Creating a Windows Compliance Policy
+# Task 3 - Creating and Verifying a Windows Compliance Policy
 
 ## Objective
 
-Create and assign a **Windows 10/11 compliance policy** in **Microsoft Intune** to evaluate the security posture of managed Windows devices and verify the compliance state of **CLIENT01**.
+Create and assign a **Windows 10/11 compliance policy** in **Microsoft Intune**, evaluate **CLIENT01** against the configured security requirements, and verify the device's final **compliance state**.
 
 ---
 
@@ -242,16 +242,16 @@ Following synchronisation and policy evaluation, **CLIENT01 reported a Compliant
 
 **Figure 1:** **Device Health** compliance settings requiring **Secure Boot** and **Code integrity**.
 
-<img width="1919" height="913" alt="06 – Creating a Windows Compliance Policy" src="https://github.com/user-attachments/assets/03637006-b9c7-4d82-a4f1-777ff03a654e" />
+<img width="1919" height="913" alt="06 – Creating and Verifying a Windows Compliance Policy" src="https://github.com/user-attachments/assets/013bd6a4-4c9a-4a3d-9f50-79c4a1b9cda0" />
 
 **Figure 2:** **System Security** and **Microsoft Defender** compliance requirements configured for the Windows endpoint.
 
-<img width="1919" height="914" alt="07 – Creating a Windows Compliance Policy" src="https://github.com/user-attachments/assets/3dbc1b1c-0279-419a-a742-9346abefbad5" />
+<img width="1919" height="914" alt="07 – Creating and Verifying a Windows Compliance Policy" src="https://github.com/user-attachments/assets/b57f4a6b-86a6-4af0-9050-7acfa49c534b" />
 
 **Figure 3:** **Windows 10-11 - Compliance Policy** assigned to the **Windows Devices** group containing the managed device.
 
-<img width="1919" height="913" alt="08 – Creating a Windows Compliance Policy" src="https://github.com/user-attachments/assets/288cdf96-3c3a-46a0-a24c-1e6b862caa14" />
+<img width="1919" height="913" alt="08 – Creating and Verifying a Windows Compliance Policy" src="https://github.com/user-attachments/assets/d4749d92-5ea6-4065-9fb3-70af8616f4e8" />
 
 **Figure 4:** Final Microsoft Intune compliance evaluation showing **CLIENT01** with a green **Compliant** policy state.
 
-<img width="1919" height="915" alt="09 – Creating a Windows Compliance Policy" src="https://github.com/user-attachments/assets/37117214-1e30-4941-8564-6ff8e47fcc06" />
+<img width="1919" height="915" alt="09 – Creating and Verifying a Windows Compliance Policy" src="https://github.com/user-attachments/assets/e3a0e95c-bc21-426f-895c-41f9bd636085" />
