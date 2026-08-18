@@ -76,7 +76,7 @@ The **Windows 10-11 - User Experience Configuration** profile was successfully c
 
 ---
 
-## Screenshots
+## Screenshot
 
 **Figure 1:** Configuring the **Microsoft Edge Favorites Bar** and **JayTech Resources** managed favourites within the Windows Settings Catalog profile.
 
@@ -147,7 +147,7 @@ This confirmed the complete configuration process from **central policy creation
 
 ---
 
-## Screenshots
+## Screenshot
 
 **Figure 1:** CLIENT01 displaying **Managed by JayTech** and confirming that the Microsoft Intune device synchronisation completed successfully.
 
@@ -238,7 +238,7 @@ Following synchronisation and policy evaluation, **CLIENT01 reported a Compliant
 
 ---
 
-## Screenshots
+## Screenshot
 
 **Figure 1:** **Device Health** compliance settings requiring **Secure Boot** and **Code integrity**.
 
