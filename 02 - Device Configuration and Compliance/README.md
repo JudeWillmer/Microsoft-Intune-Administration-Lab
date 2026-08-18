@@ -160,3 +160,98 @@ This confirmed the complete configuration process from **central policy creation
 **Figure 3:** The deployed Microsoft Edge configuration in Microsoft Intune showing **Configure favorites: Enabled**, the **JayTech Resources** managed favourites configuration, and **Enable favorites bar: Enabled**.
 
 <img width="1919" height="914" alt="05 – Verifying Intune Policy Deployment on CLIENT01" src="https://github.com/user-attachments/assets/d79d055f-24bc-4f56-a704-163d723b0f91" />
+
+# Task 3 - Creating a Windows Compliance Policy
+
+## Objective
+
+Create and assign a **Windows 10/11 compliance policy** in **Microsoft Intune** to evaluate the security posture of managed Windows devices and verify the compliance state of **CLIENT01**.
+
+---
+
+## Implementation
+
+I created a **Windows 10/11 compliance policy** named **Windows 10-11 - Compliance Policy** with the description:
+
+**Windows compliance policy for managed JayTech Ltd endpoints.**
+
+Within **Device Health**, I configured:
+
+- **Secure Boot:** Require
+- **Code integrity:** Require
+
+Within **System Security**, I configured:
+
+- **Firewall:** Require
+- **Antivirus:** Require
+- **Antispyware:** Require
+- **Microsoft Defender Antimalware:** Require
+- **Microsoft Defender Antimalware security intelligence up-to-date:** Require
+- **Real-time protection:** Require
+
+The storage encryption requirement was set to **Not configured** to ensure compatibility with the virtualised lab endpoint.
+
+For **Actions for noncompliance**, the device was configured to be marked as noncompliant **Immediately (0 days)** if it failed the configured compliance requirements.
+
+The policy was assigned to the **Windows Devices** group containing the managed **CLIENT01** device.
+
+After the policy was created and assigned, I synchronised **CLIENT01** with Microsoft Intune and allowed the compliance policy to evaluate the device.
+
+---
+
+## Navigation
+
+Microsoft Intune Admin Center  
+→ Devices  
+→ Compliance  
+→ Policies  
+→ Create policy  
+→ Platform: Windows 10 and later  
+→ Profile type: Windows 10/11 compliance policy  
+→ Create  
+→ Basics  
+→ Compliance settings  
+→ Device Health  
+→ Secure Boot: Require  
+→ Code integrity: Require  
+→ System Security  
+→ Firewall: Require  
+→ Antivirus: Require  
+→ Antispyware: Require  
+→ Microsoft Defender Antimalware: Require  
+→ Microsoft Defender Antimalware security intelligence up-to-date: Require  
+→ Real-time protection: Require  
+→ Actions for noncompliance  
+→ Mark device noncompliant: Immediately (0 days)  
+→ Assignments  
+→ Windows Devices  
+→ Review + create  
+→ Create
+
+---
+
+## Outcome
+
+The **Windows 10-11 - Compliance Policy** was successfully created and assigned to the **Windows Devices** group.
+
+Following synchronisation and policy evaluation, **CLIENT01 reported a Compliant policy state**, confirming that the device met the configured Windows security and Microsoft Defender compliance requirements.
+
+---
+
+## Screenshots
+
+**Figure 1:** **Device Health** compliance settings requiring **Secure Boot** and **Code integrity**.
+
+<img width="1919" height="913" alt="06 – Creating a Windows Compliance Policy" src="https://github.com/user-attachments/assets/03637006-b9c7-4d82-a4f1-777ff03a654e" />
+
+**Figure 2:** **System Security** and **Microsoft Defender** compliance requirements configured for the Windows endpoint.
+
+<img width="1919" height="914" alt="07 – Creating a Windows Compliance Policy" src="https://github.com/user-attachments/assets/3dbc1b1c-0279-419a-a742-9346abefbad5" />
+
+**Figure 3:** **Windows 10-11 - Compliance Policy** assigned to the **Windows Devices** group containing the managed device.
+
+<img width="1919" height="913" alt="08 – Creating a Windows Compliance Policy" src="https://github.com/user-attachments/assets/288cdf96-3c3a-46a0-a24c-1e6b862caa14" />
+
+**Figure 4:** Final Microsoft Intune compliance evaluation showing **CLIENT01** with a green **Compliant** policy state.
+
+<img width="1919" height="915" alt="09 – Creating a Windows Compliance Policy" src="https://github.com/user-attachments/assets/37117214-1e30-4941-8564-6ff8e47fcc06" />
