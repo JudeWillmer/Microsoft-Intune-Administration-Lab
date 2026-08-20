@@ -201,32 +201,34 @@ After the policy was created and assigned, I synchronised **CLIENT01** with Micr
 
 ## Navigation
 
-Microsoft Intune Admin Center  
-→ Devices  
-→ Compliance  
-→ Policies  
-→ Create policy  
-→ Platform: Windows 10 and later  
-→ Profile type: Windows 10/11 compliance policy  
-→ Create  
-→ Basics  
-→ Compliance settings  
-→ Device Health  
-→ Secure Boot: Require  
-→ Code integrity: Require  
-→ System Security  
-→ Firewall: Require  
-→ Antivirus: Require  
-→ Antispyware: Require  
-→ Microsoft Defender Antimalware: Require  
-→ Microsoft Defender Antimalware security intelligence up-to-date: Require  
-→ Real-time protection: Require  
-→ Actions for noncompliance  
-→ Mark device noncompliant: Immediately (0 days)  
-→ Assignments  
-→ Windows Devices  
-→ Review + create  
+```
+Microsoft Intune Admin Center
+→ Devices
+→ Compliance
+→ Policies
+→ Create policy
+→ Platform: Windows 10 and later
+→ Profile type: Windows 10/11 compliance policy
 → Create
+→ Basics
+→ Compliance settings
+→ Device Health
+→ Secure Boot: Require
+→ Code integrity: Require
+→ System Security
+→ Firewall: Require
+→ Antivirus: Require
+→ Antispyware: Require
+→ Microsoft Defender Antimalware: Require
+→ Microsoft Defender Antimalware security intelligence up-to-date: Require
+→ Real-time protection: Require
+→ Actions for noncompliance
+→ Mark device noncompliant: Immediately (0 days)
+→ Assignments
+→ Windows Devices
+→ Review + create
+→ Create
+```
 
 ---
 
