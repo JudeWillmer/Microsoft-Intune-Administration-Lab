@@ -18,9 +18,9 @@ Create and assign a **Windows configuration profile** in **Microsoft Intune** to
 
 ## Implementation
 
-I created a **Settings Catalog** configuration profile named **Windows 10-11 - User Experience Configuration** for **Windows 10 and later** devices.
+I created the **Windows 10-11 - User Experience Configuration** profile using the **Settings Catalog** in Microsoft Intune and configured Microsoft Edge settings for managed Windows endpoints. The profile enabled the **Favorites Bar** and deployed a centrally managed favourites folder named **JayTech Resources**.
 
-Within the **Microsoft Edge** settings, I enabled the **Favorites Bar** and configured a managed favourites folder named **JayTech Resources** containing links to commonly used Microsoft resources.
+The managed favourites provided users with predefined shortcuts to **Microsoft 365**, **Microsoft Intune**, and **Microsoft Entra**, demonstrating how Intune can standardise browser resources across managed devices. The profile was assigned to the **Windows Devices** security group for deployment to the managed endpoint.
 
 The managed favourites configuration used was:
 
@@ -42,9 +42,6 @@ The managed favourites configuration used was:
     "url": "https://entra.microsoft.com/"
   }
 ]
-```
-
-The profile was assigned to the **Windows Devices** security group so that the configuration could be centrally applied to the managed Windows endpoint.
 
 ---
 
