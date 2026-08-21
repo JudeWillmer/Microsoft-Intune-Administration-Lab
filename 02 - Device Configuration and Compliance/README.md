@@ -202,9 +202,7 @@ Microsoft Intune Admin Center
 
 ## Outcome
 
-The **Windows 10-11 - Compliance Policy** was successfully created and assigned to the **Windows Devices** group.
-
-Following synchronisation and policy evaluation, **CLIENT01 reported a Compliant policy state**, confirming that the device met the configured Windows security and Microsoft Defender compliance requirements.
+The **Windows 10-11 - Compliance Policy** was successfully created and assigned to the **Windows Devices** group. Following synchronisation and policy evaluation, **CLIENT01 reported a Compliant policy state**, confirming that the device met the configured Windows security and Microsoft Defender compliance requirements.
 
 ---
 
