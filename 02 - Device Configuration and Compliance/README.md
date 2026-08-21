@@ -96,15 +96,9 @@ Verify that the **Windows 10-11 - User Experience Configuration** profile was su
 
 ## Implementation
 
-After creating and assigning the **Windows 10-11 - User Experience Configuration** profile, I verified that **CLIENT01** was communicating successfully with **Microsoft Intune**.
+After creating and assigning the **Windows 10-11 - User Experience Configuration** profile, I manually synchronised **CLIENT01** with Microsoft Intune and confirmed that the endpoint displayed **Managed by JayTech**. I then opened **Microsoft Edge** and verified that the managed favourites had been deployed successfully, including the **JayTech Resources** folder and Microsoft 365 shortcut.
 
-On CLIENT01, I opened the device management connection and confirmed that the device displayed **Managed by JayTech**. I then manually synchronised the device with Microsoft Intune to request the latest policies and configuration settings.
-
-After the synchronisation completed successfully, I opened **Microsoft Edge** and confirmed that the managed favourites had been deployed to the favourites bar, including the **JayTech Resources** folder and Microsoft 365 shortcut.
-
-I then returned to the **Microsoft Intune Admin Center** and reviewed the configuration profile deployment status. The profile reported **Succeeded: 1**, with **0 errors**, **0 conflicts**, **0 not applicable**, and **0 in progress**.
-
-I also reviewed the deployed configuration and confirmed that **Configure favorites** and **Enable favorites bar** were enabled, with the **JayTech Resources** managed favourites configuration present.
+I reviewed the configuration profile within the **Microsoft Intune Admin Center**, where the deployment reported **Succeeded: 1** with **0 errors** and **0 conflicts**. I also confirmed that **Configure favorites** and **Enable favorites bar** were enabled, verifying that the configuration had been successfully deployed and applied to CLIENT01.
 
 ---
 
@@ -139,11 +133,7 @@ Microsoft Intune Admin Center
 
 ## Outcome
 
-The **Windows 10-11 - User Experience Configuration** profile was successfully received and applied by **CLIENT01**.
-
-The endpoint successfully synchronised with Microsoft Intune, the managed Microsoft Edge favourites became visible on the device, and Intune reported **Succeeded: 1** with **0 errors** and **0 conflicts**.
-
-This confirmed the complete configuration process from **central policy creation and device assignment in Intune** through to **successful deployment and application on CLIENT01**.
+The **Windows 10-11 - User Experience Configuration** profile was successfully deployed and applied to **CLIENT01**, with the managed Microsoft Edge favourites appearing on the endpoint and Intune reporting **Succeeded: 1** with **0 errors** and **0 conflicts**. This confirmed the complete configuration workflow from **central policy creation and assignment** through to successful deployment and application on the managed Windows device.
 
 ---
 
@@ -171,31 +161,9 @@ Create and assign a **Windows 10/11 compliance policy** in **Microsoft Intune**,
 
 ## Implementation
 
-I created a **Windows 10/11 compliance policy** named **Windows 10-11 - Compliance Policy** with the description:
+I created the **Windows 10-11 - Compliance Policy** in Microsoft Intune to evaluate managed Windows endpoints against defined **device health** and **system security** requirements. The policy required **Secure Boot**, **code integrity**, **Firewall**, **Antivirus**, **Antispyware**, and key **Microsoft Defender** protections, while storage encryption was left as **Not configured** for compatibility with the virtualised lab endpoint.
 
-**Windows compliance policy for managed JayTech Ltd endpoints.**
-
-Within **Device Health**, I configured:
-
-- **Secure Boot:** Require
-- **Code integrity:** Require
-
-Within **System Security**, I configured:
-
-- **Firewall:** Require
-- **Antivirus:** Require
-- **Antispyware:** Require
-- **Microsoft Defender Antimalware:** Require
-- **Microsoft Defender Antimalware security intelligence up-to-date:** Require
-- **Real-time protection:** Require
-
-The storage encryption requirement was set to **Not configured** to ensure compatibility with the virtualised lab endpoint.
-
-For **Actions for noncompliance**, the device was configured to be marked as noncompliant **Immediately (0 days)** if it failed the configured compliance requirements.
-
-The policy was assigned to the **Windows Devices** group containing the managed **CLIENT01** device.
-
-After the policy was created and assigned, I synchronised **CLIENT01** with Microsoft Intune and allowed the compliance policy to evaluate the device.
+I configured noncompliant devices to be marked **Immediately (0 days)** and assigned the policy to the **Windows Devices** group containing **CLIENT01**. After deployment, I synchronised CLIENT01 with Microsoft Intune to trigger policy evaluation and verify its compliance state.
 
 ---
 
