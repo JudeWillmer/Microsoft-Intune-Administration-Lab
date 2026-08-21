@@ -84,9 +84,13 @@ Create a **BitLocker disk encryption policy** in **Microsoft Intune** to strengt
 
 ## Implementation
 
-I created the **Windows - Microsoft Defender Antivirus** endpoint security policy in Microsoft Intune to strengthen malware protection across managed Windows endpoints. The policy enabled key Defender capabilities including archive scanning, behaviour monitoring, cloud protection, email scanning, removable-drive scanning, downloaded file and attachment scanning, real-time monitoring, and script scanning.
+I created a **Windows BitLocker policy** within Microsoft Intune Endpoint Security to centrally configure disk encryption requirements for managed Windows devices.
 
-Settings outside the requirements of this endpoint protection configuration, including specialised network, server, threat remediation, and deprecated controls, were left as **Not configured**. After reviewing the selected protections, I created the policy within Microsoft Intune.
+The policy was configured to require device encryption and use **XTS-AES 256-bit** as the encryption method for operating system drives, fixed data drives, and removable data drives.
+
+For operating system drives, I enabled enforcement of the drive encryption type and configured **Full encryption**. This ensures that the entire operating system drive is protected rather than encrypting only used disk space.
+
+I also enabled the configuration for recovering BitLocker-protected operating system drives, providing support for recovery scenarios where access to an encrypted device may need to be restored.
 
 ---
 
@@ -126,7 +130,11 @@ Microsoft Intune Admin Center
 
 ## Outcome
 
-The **Windows - Microsoft Defender Antivirus** policy was successfully created in **Microsoft Intune**, establishing centrally managed protection across Windows endpoints through **real-time monitoring**, **cloud protection**, **behaviour monitoring**, and multiple scanning controls. This provides a consistent antivirus security baseline that can be centrally managed through Microsoft Intune.
+The **Windows - BitLocker Disk Encryption** policy was successfully created in Microsoft Intune with strengthened encryption requirements for managed Windows devices.
+
+The policy requires device encryption, configures **XTS-AES 256-bit** encryption for operating system, fixed, and removable data drives, and enforces **Full encryption** for operating system drives.
+
+This demonstrates practical endpoint security administration through the central configuration of **BitLocker encryption controls**, helping protect organisational data stored on managed Windows devices.
 
 ---
 
@@ -134,12 +142,12 @@ The **Windows - Microsoft Defender Antivirus** policy was successfully created i
 
 **Figure 1:** The BitLocker policy configuration showing **Require Device Encryption: Enabled** and **XTS-AES 256-bit** configured for operating system, fixed data, and removable data drives.
 
-<img width="1919" height="913" alt="04 – Configuring BitLocker Disk Encryption in Microsoft Intune" src="https://github.com/user-attachments/assets/76a1c376-ce51-40a9-9372-e9f79405b78f" />
+<img width="1919" height="913" alt="04 – Configuring BitLocker Disk Encryption in Microsoft Intune" src="https://github.com/user-attachments/assets/e349b3b9-8c27-4c2d-bd68-d7e80f7f49b1" />
 
 **Figure 2:** The **Operating System Drives** configuration showing drive encryption enforcement enabled and the encryption type configured as **Full encryption**.
 
-<img width="1919" height="914" alt="05 – Configuring BitLocker Disk Encryption in Microsoft Intune" src="https://github.com/user-attachments/assets/a3319925-a767-437f-bd3e-bbdd075f1255" />
+<img width="1919" height="914" alt="05 – Configuring BitLocker Disk Encryption in Microsoft Intune" src="https://github.com/user-attachments/assets/babecad1-5788-44b4-88c9-39455f421119" />
 
 **Figure 3:** The **Review + create** summary confirming the completed **Windows - BitLocker Disk Encryption** policy, including device encryption, **XTS-AES 256-bit** encryption, **Full encryption**, and BitLocker operating system drive recovery settings.
 
-<img width="1919" height="914" alt="06 – Configuring BitLocker Disk Encryption in Microsoft Intune" src="https://github.com/user-attachments/assets/e7e47f0a-c8a2-499b-ad2e-a17602f3d21e" />
+<img width="1919" height="914" alt="06 – Configuring BitLocker Disk Encryption in Microsoft Intune" src="https://github.com/user-attachments/assets/7a82e3de-22d9-4202-a8c2-a4d4c522461f" />
