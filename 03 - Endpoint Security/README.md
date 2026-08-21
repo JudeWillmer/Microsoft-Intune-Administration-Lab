@@ -18,15 +18,9 @@ Create a **Microsoft Defender Antivirus policy** in **Microsoft Intune** to cent
 
 ## Implementation
 
-I navigated to **Endpoint security > Antivirus** within the **Microsoft Intune Admin Center** and created a new endpoint security policy using the **Windows** platform and **Microsoft Defender Antivirus** profile.
+I created the **Windows - Microsoft Defender Antivirus** endpoint security policy in Microsoft Intune to strengthen malware protection across managed Windows endpoints. The policy enabled key Defender capabilities including archive scanning, behaviour monitoring, cloud protection, email scanning, removable-drive scanning, downloaded file and attachment scanning, real-time monitoring, and script scanning.
 
-I created the policy with the name **Windows - Microsoft Defender Antivirus** and configured key Microsoft Defender protections for managed Windows endpoints.
-
-The policy was configured to enable **archive scanning**, **behaviour monitoring**, **cloud protection**, **email scanning**, **removable-drive scanning**, **downloaded file and attachment scanning**, **real-time monitoring**, and **script scanning**.
-
-Settings that were not required for the endpoint protection baseline, including specialised network, server, threat remediation, and deprecated controls, were left as **Not configured**.
-
-After reviewing the configured settings, I created the **Windows - Microsoft Defender Antivirus** policy within Microsoft Intune.
+Settings outside the requirements of this endpoint protection configuration, including specialised network, server, threat remediation, and deprecated controls, were left as **Not configured**. After reviewing the selected protections, I created the policy within Microsoft Intune.
 
 ---
 
@@ -62,11 +56,7 @@ Microsoft Intune Admin Center
 
 ## Outcome
 
-The **Windows - Microsoft Defender Antivirus** policy was successfully created within **Microsoft Intune**.
-
-The policy establishes centrally managed antivirus protection settings including **real-time monitoring**, **behaviour monitoring**, **cloud protection**, and scanning of potentially malicious content such as **email, archives, removable drives, scripts, downloaded files, and attachments**.
-
-This provides a centralised method of managing **Microsoft Defender Antivirus** protection settings across managed Windows endpoints.
+The **Windows - Microsoft Defender Antivirus** policy was successfully created in **Microsoft Intune**, establishing centrally managed protection across Windows endpoints through **real-time monitoring**, **cloud protection**, **behaviour monitoring**, and multiple scanning controls. This provides a consistent antivirus security baseline that can be centrally managed through Microsoft Intune.
 
 ---
 
