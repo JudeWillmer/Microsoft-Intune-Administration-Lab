@@ -50,7 +50,7 @@ The **Windows - Microsoft Defender Antivirus** policy was successfully created w
 
 ---
 
-## Screenshots
+## Screenshot
 
 **Figure 1:** Creating a new endpoint security policy using the **Windows** platform and **Microsoft Defender Antivirus** profile.
 
@@ -120,7 +120,7 @@ The **Windows - BitLocker Disk Encryption** policy was successfully created in *
 
 ---
 
-## Screenshots
+## Screenshot
 
 **Figure 1:** The BitLocker policy configuration showing **Require Device Encryption: Enabled** and **XTS-AES 256-bit** configured for operating system, fixed data, and removable data drives.
 
