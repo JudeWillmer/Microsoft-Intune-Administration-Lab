@@ -8,15 +8,9 @@ Create a **Microsoft Defender Antivirus policy** in **Microsoft Intune** to cent
 
 ## Implementation
 
-I navigated to **Endpoint security > Antivirus** within the **Microsoft Intune Admin Center** and created a new endpoint security policy using the **Windows** platform and **Microsoft Defender Antivirus** profile.
+I created the **Windows - Microsoft Defender Antivirus** endpoint security policy in **Microsoft Intune** using the **Windows** platform and **Microsoft Defender Antivirus** profile. The policy was configured to provide centrally managed antivirus protection across managed Windows endpoints.
 
-I created the policy with the name **Windows - Microsoft Defender Antivirus** and configured key Microsoft Defender protections for managed Windows endpoints.
-
-The policy was configured to enable **archive scanning**, **behaviour monitoring**, **cloud protection**, **email scanning**, **removable-drive scanning**, **downloaded file and attachment scanning**, **real-time monitoring**, and **script scanning**.
-
-Settings that were not required for the endpoint protection baseline, including specialised network, server, threat remediation, and deprecated controls, were left as **Not configured**.
-
-After reviewing the configured settings, I created the **Windows - Microsoft Defender Antivirus** policy within Microsoft Intune.
+I enabled **archive scanning**, **behaviour monitoring**, **cloud protection**, **email scanning**, **removable-drive scanning**, **downloaded file and attachment scanning**, **real-time monitoring**, and **script scanning**. Settings outside the required endpoint protection baseline, including specialised network, server, threat remediation, and deprecated controls, were left as **Not configured**.
 
 ---
 
@@ -52,11 +46,7 @@ Microsoft Intune Admin Center
 
 ## Outcome
 
-The **Windows - Microsoft Defender Antivirus** policy was successfully created within **Microsoft Intune**.
-
-The policy establishes centrally managed antivirus protection settings including **real-time monitoring**, **behaviour monitoring**, **cloud protection**, and scanning of potentially malicious content such as **email, archives, removable drives, scripts, downloaded files, and attachments**.
-
-This provides a centralised method of managing **Microsoft Defender Antivirus** protection settings across managed Windows endpoints.
+The **Windows - Microsoft Defender Antivirus** policy was successfully created within **Microsoft Intune**, establishing centrally managed antivirus protection across managed Windows endpoints. The policy provides key protections including **real-time monitoring**, **behaviour monitoring**, **cloud protection**, and scanning of potentially malicious content such as **email, archives, removable drives, scripts, downloaded files, and attachments**.
 
 ---
 
@@ -84,13 +74,9 @@ Create a **BitLocker disk encryption policy** in **Microsoft Intune** to strengt
 
 ## Implementation
 
-I created a **Windows BitLocker policy** within Microsoft Intune Endpoint Security to centrally configure disk encryption requirements for managed Windows devices.
+I created the **Windows - BitLocker Disk Encryption** policy within **Microsoft Intune Endpoint Security** to centrally configure disk encryption requirements for managed Windows devices. The policy required device encryption and configured **XTS-AES 256-bit** encryption for operating system, fixed data, and removable data drives.
 
-The policy was configured to require device encryption and use **XTS-AES 256-bit** as the encryption method for operating system drives, fixed data drives, and removable data drives.
-
-For operating system drives, I enabled enforcement of the drive encryption type and configured **Full encryption**. This ensures that the entire operating system drive is protected rather than encrypting only used disk space.
-
-I also enabled the configuration for recovering BitLocker-protected operating system drives, providing support for recovery scenarios where access to an encrypted device may need to be restored.
+For operating system drives, I enforced **Full encryption** to protect the entire drive rather than only used disk space. I also enabled BitLocker operating system drive recovery configuration to support scenarios where access to an encrypted device may need to be restored.
 
 ---
 
@@ -130,11 +116,7 @@ Microsoft Intune Admin Center
 
 ## Outcome
 
-The **Windows - BitLocker Disk Encryption** policy was successfully created in Microsoft Intune with strengthened encryption requirements for managed Windows devices.
-
-The policy requires device encryption, configures **XTS-AES 256-bit** encryption for operating system, fixed, and removable data drives, and enforces **Full encryption** for operating system drives.
-
-This demonstrates practical endpoint security administration through the central configuration of **BitLocker encryption controls**, helping protect organisational data stored on managed Windows devices.
+The **Windows - BitLocker Disk Encryption** policy was successfully created in **Microsoft Intune**, requiring device encryption with **XTS-AES 256-bit** and enforcing **Full encryption** for operating system drives. This established centrally managed **BitLocker encryption controls** to strengthen the protection of organisational data stored on managed Windows devices.
 
 ---
 
