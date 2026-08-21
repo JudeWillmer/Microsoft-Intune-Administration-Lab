@@ -279,17 +279,9 @@ Enrol a **Windows 10 Pro device** into **Microsoft Intune** using a standard use
 
 ## Implementation
 
-I configured **automatic MDM enrolment** in Microsoft Intune to allow users within the targeted **IT Department** security group to enrol Windows devices into Intune.
+I configured **automatic MDM enrolment** in Microsoft Intune for the **IT Department** security group, allowing targeted users to enrol Windows devices for centralised management. On the Windows 10 Pro virtual machine **CLIENT01**, I connected the Microsoft Entra ID account for **Hardy Souza** through **Access work or school**, successfully enrolling the endpoint with Microsoft Intune.
 
-On the Windows 10 Pro virtual machine **CLIENT01**, I opened **Access work or school** and connected the device using the Microsoft Entra ID account for **Hardy Souza**.
-
-The work account was successfully connected to the device, allowing **CLIENT01** to enrol with Microsoft Intune.
-
-I then accessed the **Microsoft Intune Admin Center** and verified the device under **Devices > All devices**.
-
-The device appeared successfully as **CLIENT01**, with Microsoft Intune listed as the management authority and **Hardy Souza** shown as the primary user.
-
-The device also reported a **Compliant** status, confirming that the endpoint was successfully enrolled and communicating with Microsoft Intune.
+I verified the enrolment through the **Microsoft Intune Admin Center**, where **CLIENT01** appeared as an Intune-managed device with **Hardy Souza** listed as the primary user. The device also reported a **Compliant** status, confirming that the endpoint was successfully enrolled and communicating with Microsoft Intune.
 
 ---
 
@@ -324,11 +316,7 @@ Microsoft Intune Admin Center
 
 ## Outcome
 
-The **CLIENT01** Windows 10 Pro endpoint was successfully enrolled into **Microsoft Intune**.
-
-The device is now visible within the Microsoft Intune Admin Center, is **managed by Intune**, has **Hardy Souza** associated as its primary user, and reports a **Compliant** status.
-
-This demonstrates the process of onboarding a Windows endpoint into a cloud-based device management environment and verifying successful Intune management.
+The **CLIENT01** Windows 10 Pro endpoint was successfully enrolled into **Microsoft Intune**, with **Hardy Souza** associated as the primary user and the device reporting a **Compliant** status. This confirmed successful Windows endpoint onboarding and demonstrated that CLIENT01 was communicating with and centrally managed through Microsoft Intune.
 
 ---
 
