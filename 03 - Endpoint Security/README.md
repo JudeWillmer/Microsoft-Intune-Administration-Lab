@@ -70,7 +70,7 @@ This provides a centralised method of managing **Microsoft Defender Antivirus** 
 
 ---
 
-## Screenshots
+## Screenshot
 
 **Figure 1:** Creating a new endpoint security policy using the **Windows** platform and **Microsoft Defender Antivirus** profile.
 
@@ -148,7 +148,7 @@ This demonstrates practical endpoint security administration through the central
 
 ---
 
-## Screenshots
+## Screenshot
 
 **Figure 1:** The BitLocker policy configuration showing **Require Device Encryption: Enabled** and **XTS-AES 256-bit** configured for operating system, fixed data, and removable data drives.
 
