@@ -133,3 +133,66 @@ The **Windows - BitLocker Disk Encryption** policy was successfully created in *
 **Figure 3:** The **Review + create** summary confirming the completed **Windows - BitLocker Disk Encryption** policy, including device encryption, **XTS-AES 256-bit** encryption, **Full encryption**, and BitLocker operating system drive recovery settings.
 
 <img width="1919" height="914" alt="06 – Configuring BitLocker Disk Encryption in Microsoft Intune" src="https://github.com/user-attachments/assets/7a82e3de-22d9-4202-a8c2-a4d4c522461f" />
+
+# Task 3 - Creating a Removable Storage Device Control Policy
+
+## Objective
+
+Create a **Device Control policy** in **Microsoft Intune** to strengthen endpoint security by controlling removable storage devices, scanning removable drives for threats, and applying a **default deny enforcement** approach to reduce the risk posed by unauthorised removable media.
+
+---
+
+## Implementation
+
+I created a new **Device Control** policy within **Endpoint security > Attack surface reduction**, using the **Windows** platform. The policy was named **Windows - Removable Storage Device Control** and was designed to strengthen the security of managed Windows devices against threats introduced through removable storage.
+
+Within the Defender settings, I enabled **Device Control**, allowed **full scanning of removable drives**, and configured **Default Deny Enforcement**. This provides a restrictive security posture in which removable device access is denied by default unless explicitly permitted, while removable drives can also be scanned for potential malware and other threats.
+
+---
+
+## Navigation
+
+```text
+Microsoft Intune Admin Center
+→ Endpoint security
+→ Attack surface reduction
+→ Create Policy
+→ Platform: Windows
+→ Profile: Device Control
+→ Create
+→ Basics
+→ Name: Windows - Removable Storage Device Control
+→ Description: Configures removable storage and USB access restrictions for managed Windows devices.
+→ Configuration settings
+→ Defender
+→ Device Control Enabled: Device Control is enabled
+→ Allow Full Scan Removable Drive Scanning: Allowed. Scans removable drives.
+→ Default Enforcement: Default Deny Enforcement
+→ Secured Devices Configuration: Not configured
+→ Scope tags
+→ Assignments
+→ Review + create
+→ Create
+```
+
+---
+
+## Outcome
+
+The **Windows - Removable Storage Device Control** policy was successfully created in Microsoft Intune with **Device Control enabled**, removable-drive scanning permitted, and **Default Deny Enforcement** configured. This demonstrates the use of centralised endpoint security controls to reduce exposure to unauthorised removable media and help protect managed Windows devices from malware and other threats that could be introduced through removable storage.
+
+---
+
+## Screenshot
+
+**Figure 1:** Microsoft Intune showing the creation of a new **Windows Device Control** profile under **Endpoint security > Attack surface reduction**.
+
+<img width="1919" height="913" alt="07 – Creating a Removable Storage Device Control Policy" src="https://github.com/user-attachments/assets/0fd77b96-c900-4381-9862-d6e0cd3afea3" />
+
+**Figure 2:** The Device Control policy configuration showing **Device Control is enabled**, **removable-drive scanning allowed**, and **Default Deny Enforcement** configured.
+
+<img width="1919" height="913" alt="08 – Creating a Removable Storage Device Control Policy" src="https://github.com/user-attachments/assets/b0bcce29-b5ff-4eaf-b505-79c9fef52da5" />
+
+**Figure 3:** Microsoft Intune showing the successfully created **Windows - Removable Storage Device Control** policy with the **Device Control** policy type and **Windows** platform.
+
+<img width="1919" height="914" alt="09 – Creating a Removable Storage Device Control Policy" src="https://github.com/user-attachments/assets/10c93881-2656-481f-88ca-e62bf8d841e0" />
