@@ -216,9 +216,7 @@ Create a **dynamic security group** in **Microsoft Entra ID** that automatically
 
 ## Implementation
 
-I created a **Security** group named **IT Department - Dynamic** and configured the membership type as **Dynamic User**.
-
-I then created a **dynamic membership rule** using the **department** attribute. The rule automatically includes users whose department is set to **IT**, removing the need to manually add eligible users to the group.
+I created a **Security** group named **IT Department - Dynamic** and configured the membership type as **Dynamic User**. I then created a **dynamic membership rule** using the **department** attribute. The rule automatically includes users whose department is set to **IT**, removing the need to manually add eligible users to the group.
 
 The dynamic membership rule used was:
 
