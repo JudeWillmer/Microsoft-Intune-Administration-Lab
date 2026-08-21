@@ -42,6 +42,7 @@ The managed favourites configuration used was:
     "url": "https://entra.microsoft.com/"
   }
 ]
+```
 
 ---
 
