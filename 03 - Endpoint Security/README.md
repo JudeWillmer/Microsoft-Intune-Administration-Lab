@@ -6,6 +6,8 @@ This section covers the core **endpoint security** tasks I completed within the 
 
 These tasks demonstrate practical **IT Support** skills involving **endpoint protection**, **antivirus configuration**, **disk encryption**, **device control**, and centrally managing Windows security policies through **Microsoft Intune**.
 
+---
+
 # Task 1 - Creating a Microsoft Defender Antivirus Policy
 
 ## Objective
