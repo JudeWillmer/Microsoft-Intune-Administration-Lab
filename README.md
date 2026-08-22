@@ -49,7 +49,7 @@ Configure Microsoft Defender Antivirus, BitLocker encryption, and endpoint secur
 
 ### 📁 04 - Application Management
 
-Configure and deploy applications to managed devices using Microsoft Intune, while controlling application assignments through appropriate user or device groups.
+Deploy Microsoft Store and Win32 applications to managed Windows devices using Microsoft Intune, including application packaging, targeting, assignments, and deployment monitoring.
 
 ### 📁 05 - Device Lifecycle and Troubleshooting
 
