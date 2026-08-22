@@ -55,7 +55,7 @@ The **Microsoft Intune device wipe workflow** was successfully reviewed for **CL
 
 <img width="1919" height="914" alt="02 – Reviewing the Device Decommissioning Process in Microsoft Intune" src="https://github.com/user-attachments/assets/e0959b66-428d-4720-a93e-114e91a83ff8" />
 
-# Task 1 - Troubleshooting an Intune Compliance Policy Error
+# Task 2 - Troubleshooting an Intune Compliance Policy Error
 
 ## Objective
 
