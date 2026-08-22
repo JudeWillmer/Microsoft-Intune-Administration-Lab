@@ -20,7 +20,7 @@ Review the **device decommissioning process** for the managed Windows endpoint *
 
 I reviewed the **device decommissioning workflow** for the managed Windows endpoint **CLIENT01** within Microsoft Intune. From the device overview, I accessed the remote **Wipe** action and reviewed the available factory reset options and their potential impact on the endpoint.
 
-The final wipe command was intentionally **not executed**, as CLIENT01 remained required for the troubleshooting and diagnostic tasks within the lab. This allowed the decommissioning procedure to be demonstrated and documented without removing the existing device configuration, applications, or management state.
+The final wipe command was intentionally **not executed**, as **CLIENT01** remained required for the troubleshooting and diagnostic tasks within the lab. This allowed the decommissioning procedure to be demonstrated and documented without removing the existing device configuration, applications, or management state.
 
 ---
 
