@@ -18,9 +18,9 @@ Deploy **Adobe Acrobat Reader DC** to managed Windows devices through **Microsof
 
 ## Implementation
 
-I added **Adobe Acrobat Reader DC** to Microsoft Intune as a **Microsoft Store app (new)** and reviewed the automatically populated application information, including the publisher, package identifier, and system installation behaviour. This provides a centrally managed method of deploying a standard business application without requiring users to manually locate and install the software.
+I added **Adobe Acrobat Reader DC** to **Microsoft Intune** using the **Microsoft Store app (new)** application type. The application was configured as a **Required** deployment and assigned to the **Windows Devices** group, allowing Intune to centrally deploy the application to managed Windows endpoints.
 
-I configured the application as **Required** for the **Windows Devices** group, causing Intune to automatically deploy the application to targeted managed devices. After creating the deployment, I initiated a manual **Sync** from the **Access work or school** settings on **CLIENT01** to trigger communication with Microsoft Intune and accelerate policy and application retrieval. I then monitored the deployment from the Intune admin center and confirmed that Adobe Acrobat Reader DC successfully installed on the targeted device.
+After creating the application assignment, I manually synchronised the managed **CLIENT01** device through **Access work or school** to retrieve the latest Intune configuration. The deployment was then monitored through Intune, confirming that **Adobe Acrobat Reader DC** had been successfully installed on the targeted device.
 
 ---
 
@@ -74,7 +74,7 @@ Microsoft Intune Admin Center
 
 ## Outcome
 
-**Adobe Acrobat Reader DC** was successfully deployed through Microsoft Intune as a **required application** to the **Windows Devices** group. Following a manual Intune sync from **CLIENT01**, the application deployment completed successfully and Intune reported **Installed: 1**, with **0 failed** and **0 pending** installations. This demonstrates centralised Windows application deployment, group-based targeting, endpoint synchronisation, and deployment-status monitoring through Microsoft Intune.
+**Adobe Acrobat Reader DC** was successfully deployed through **Microsoft Intune** as a required Microsoft Store application. The deployment reported **Installed: 1** with **0 failed installations**, demonstrating centralised application assignment, device synchronisation, and successful software delivery to a managed Windows endpoint.
 
 ---
 
@@ -102,9 +102,9 @@ Package and deploy a traditional **Windows application as a Win32 app** through 
 
 ## Implementation
 
-I downloaded the **7-Zip 26.02 (x64 edition)** MSI installer and used the **Microsoft Win32 Content Prep Tool (IntuneWinAppUtil.exe)** to package the installation source into the required **`.intunewin` format**. The resulting **7z2602-x64.intunewin** package was then uploaded to Microsoft Intune as a **Windows app (Win32)**. Within the application configuration, I defined the application information, selected **Business** as the category, configured the installation requirements, and used an **MSI detection rule** based on the application's product code so that Intune could determine whether 7-Zip was successfully installed.
+I packaged **7-Zip 26.02 (x64 edition)** for deployment through **Microsoft Intune** using the **Microsoft Win32 Content Prep Tool**, converting the MSI installation source into the required **`.intunewin`** format. The packaged application was then added to Intune as a **Windows app (Win32)** and configured with an **MSI-based detection rule** so that Intune could reliably determine whether the application was installed.
 
-The application was assigned as **Required** to the **Windows Devices** group with installation configured **as soon as possible**. After creating the application, I manually synchronised the managed **CLIENT01** Windows device through **Access work or school** to accelerate retrieval of the new Intune assignment. The deployment was then verified from the 7-Zip application overview in Intune, where the device installation status reported **Installed: 1**, with **0 failed**, **0 pending**, and **0 not applicable** installations.
+I assigned the application as **Required** to the **Windows Devices** group and manually synchronised the managed **CLIENT01** device through **Access work or school** to retrieve the new application assignment. Intune monitoring was then used to verify the deployment and confirm successful installation.
 
 ---
 
@@ -194,7 +194,7 @@ Microsoft Intune Admin Center
 
 ## Outcome
 
-The **7-Zip 26.02 (x64 edition)** application was successfully packaged into the **`.intunewin` format**, uploaded to Microsoft Intune as a **Windows Win32 application**, configured with an MSI-based detection rule, and assigned as a required application to the **Windows Devices** group. Following a manual synchronisation of **CLIENT01**, Intune successfully deployed and detected the application, with the final monitoring status showing **Installed: 1 and Failed: 0**. This demonstrates an end-to-end enterprise Win32 application deployment workflow using Microsoft Intune, from application packaging and detection configuration through to assignment, device synchronisation, and successful installation verification.
+**7-Zip 26.02 (x64 edition)** was successfully packaged, deployed, and detected as a **Win32 application** through **Microsoft Intune**. The final deployment status reported **Installed: 1** with **0 failed installations**, demonstrating the complete process of packaging a traditional Windows application, configuring detection, assigning it to managed devices, synchronising the endpoint, and verifying successful deployment.
 
 ---
 
