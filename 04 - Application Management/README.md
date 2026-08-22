@@ -119,7 +119,6 @@ Prepare Win32 Application Package
       → 7Zip
       → Output
       → Tool
-→ Open Command Prompt
 → Place 7-Zip MSI installer in 7Zip folder
 → Run IntuneWinAppUtil.exe
 → Source folder: 7Zip
@@ -131,41 +130,22 @@ Microsoft Intune Admin Center
 → Apps
 → All Apps
 → Create
-→ Platform: Windows
 → App type: Windows app (Win32)
-→ Select
-→ Select app package file
 → Upload: 7z2602-x64.intunewin
 → App information
 → Name: 7-Zip 26.02 (x64 edition)
 → Publisher: Igor Pavlov
-→ App Version: 26.02.00.0
 → Category: Business
-→ Show this as a featured app: No
-→ Next
 → Program
 → Configure installation and uninstall commands
-→ Next
 → Requirements
 → Configure Windows requirements
-→ Next
 → Detection rules
-→ Rules format: Manually configure detection rules
-→ Add
+→ Manually configure detection rules
 → Rule type: MSI
-→ MSI product code: {23170F69-40C1-2702-2602-000001000000}
-→ MSI product version check: No
-→ OK
-→ Dependencies
-→ No dependencies configured
-→ Supersedence
-→ No supersedence configured
 → Assignments
 → Required
-→ Included: Windows Devices
-→ Status: Active
-→ Availability: As soon as possible
-→ Installation deadline: As soon as possible
+→ Windows Devices
 → Review + create
 → Create
 
