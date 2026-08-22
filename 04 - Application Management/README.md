@@ -119,6 +119,7 @@ Prepare Win32 Application Package
       → 7Zip
       → Output
       → Tool
+→ Open Command Prompt
 → Place 7-Zip MSI installer in 7Zip folder
 → Run IntuneWinAppUtil.exe
 → Source folder: 7Zip
