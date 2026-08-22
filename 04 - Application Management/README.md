@@ -112,14 +112,13 @@ I assigned the application as **Required** to the **Windows Devices** group and 
 
 ```text
 Prepare Win32 Application Package
-→ Download 7-Zip 26.02 (x64 edition) MSI installer
-→ Download Microsoft Win32 Content Prep Tool
 → Create working folders:
    → IntuneApps
       → 7Zip
       → Output
       → Tool
-→ Place 7-Zip MSI installer in 7Zip folder
+→ Place 7-Zip 26.02 (x64 edition) MSI installer in 7Zip folder
+→ Place Microsoft Win32 Content Prep Tool in Tool folder
 → Open Command Prompt
 → Run IntuneWinAppUtil.exe
 → Source folder: 7Zip
