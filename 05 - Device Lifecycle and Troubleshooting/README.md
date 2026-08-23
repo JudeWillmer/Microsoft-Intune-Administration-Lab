@@ -291,7 +291,20 @@ Detection rules
 → OK
 → Review + save
 
-7-Zip 26.02 (x64 edition)
+CLIENT01
+→ Settings
+→ Accounts
+→ Access work or school
+→ Workplace or school account
+→ Info
+→ Managed by JayTech
+→ Sync
+
+Microsoft Intune Admin Center
+→ Apps
+→ Windows
+→ Windows apps
+→ 7-Zip 26.02 (x64 edition)
 → Monitor
 → Device install status
 → Refresh
