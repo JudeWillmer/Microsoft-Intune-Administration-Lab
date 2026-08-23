@@ -401,6 +401,12 @@ The **device management connectivity** of **CLIENT01** was successfully investig
 
 **Figure 1:** The **CLIENT01** device record in Microsoft Intune showing the existing **Last check-in of 23/08/2026, 13:23**, establishing the device check-in status prior to troubleshooting.
 
+<img width="1919" height="913" alt="17 – Troubleshooting Device Management and Intune Check-In" src="https://github.com/user-attachments/assets/ac129956-9c1d-4b50-9058-34b016f2be42" />
+
 **Figure 2:** The **Managed by JayTech** management connection on CLIENT01 showing the configured **Management Server Address** and **Device sync status**, confirming that the manual synchronisation completed successfully at **23/08/2026 16:33:57**.
 
+<img width="1919" height="915" alt="18 – Troubleshooting Device Management and Intune Check-In" src="https://github.com/user-attachments/assets/67bb5dc9-8bbf-4968-a892-5a0435f2adfd" />
+
 **Figure 3:** The **CLIENT01** device record in Microsoft Intune showing the updated **Last check-in of 23/08/2026, 16:34**, confirming successful communication with Intune following the manual device synchronisation.
+
+<img width="1919" height="913" alt="19 – Troubleshooting Device Management and Intune Check-In" src="https://github.com/user-attachments/assets/feb5bc61-f833-4e2d-ac4f-ced668aa7f82" />
