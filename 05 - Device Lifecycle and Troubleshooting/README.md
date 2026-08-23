@@ -330,11 +330,11 @@ The **7-Zip 26.02 (x64 edition)** deployment failure was successfully traced to 
 
 <img width="1919" height="914" alt="13 – Troubleshooting an Intune Win32 Application Deployment" src="https://github.com/user-attachments/assets/7c998810-f15c-4820-bd56-bcbdf9fd01bd" />
 
-**Figure 3:** The application's **Detection rules** showing the incorrect MSI product code ending in **00001**, identifying the detection rule responsible for the failed application detection.
+**Figure 3:** The application's **Detection rules** showing the incorrect MSI product code ending in **00000**, identifying the detection rule responsible for the failed application detection.
 
 <img width="1919" height="914" alt="14 – Troubleshooting an Intune Win32 Application Deployment" src="https://github.com/user-attachments/assets/150b830a-55b3-4747-8aec-192c70c4b1bc" />
 
-**Figure 4:** The corrected **Detection rules** configuration showing the MSI product code ending in **00000**, documenting the remediation applied to the Win32 application.
+**Figure 4:** The corrected **Detection rules** configuration showing the MSI product code ending in **00001**, documenting the remediation applied to the Win32 application.
 
 <img width="1919" height="914" alt="15 – Troubleshooting an Intune Win32 Application Deployment" src="https://github.com/user-attachments/assets/4e599ec1-b5c5-48a2-9c1c-d4cc95733321" />
 
