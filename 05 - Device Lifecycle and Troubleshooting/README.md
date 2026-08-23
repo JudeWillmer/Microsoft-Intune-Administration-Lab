@@ -316,7 +316,7 @@ Microsoft Intune Admin Center
 
 ## Outcome
 
-The **7-Zip 26.02 (x64 edition)** deployment issue was successfully traced to an incorrect MSI product code in the application's detection rule. After correcting the product code from the value ending in **00001** to **00000**, syncing CLIENT01, and refreshing the deployment status, Microsoft Intune reported the application as **Installed**, confirming successful remediation.
+The **7-Zip 26.02 (x64 edition)** deployment issue was successfully traced to an incorrect MSI product code in the application's detection rule. After correcting the product code from the value ending in **00001** to **00000**, syncing **CLIENT01**, and refreshing the deployment status, Microsoft Intune reported the application as **Installed**, confirming successful remediation.
 
 ---
 
