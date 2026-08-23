@@ -16,6 +16,8 @@ Throughout this project, I enrolled and managed **Windows devices**, configured 
 - Microsoft Defender Antivirus
 - BitLocker
 - Microsoft Intune Admin Center
+- Microsoft Store Apps
+- Win32 App Deployment
 - Microsoft Win32 Content Prep Tool
 
 ---
