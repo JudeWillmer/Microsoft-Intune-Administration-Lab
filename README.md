@@ -16,6 +16,7 @@ Throughout this project, I enrolled and managed **Windows devices**, configured 
 - Microsoft Defender Antivirus
 - BitLocker
 - Microsoft Intune Admin Center
+- Microsoft Win32 Content Prep Tool
 
 ---
 
@@ -27,9 +28,9 @@ Throughout this project, I enrolled and managed **Windows devices**, configured 
 - Device configuration profiles
 - Device compliance policies
 - Endpoint security policy management
-- Application management and deployment
+- Application packaging, management, and deployment
 - Device lifecycle management
-- Intune troubleshooting
+- Intune device and application troubleshooting
 
 ---
 
