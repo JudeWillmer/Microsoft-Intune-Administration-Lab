@@ -352,11 +352,9 @@ Investigate the **device management and check-in status** of **CLIENT01**, verif
 
 ## Implementation
 
-I reviewed **CLIENT01** within the **Microsoft Intune Admin Center** to investigate its device management status. The device was confirmed as **Managed by Intune** and **Compliant**, with the existing **Last check-in** recorded as **23/08/2026, 13:23**.
+I reviewed **CLIENT01** within the **Microsoft Intune Admin Center** to investigate its device management and check-in status. The device was confirmed as **Managed by Intune** and **Compliant**, with the existing **Last check-in** recorded as **23/08/2026, 13:23**. I then accessed **Access work or school** on CLIENT01 and reviewed the **Managed by JayTech** connection to confirm that the endpoint retained its organisational management connection and configured **Management Server Address**.
 
-I then accessed **Access work or school** on **CLIENT01** and reviewed the **Managed by JayTech** management connection. The management information confirmed that the device retained its organisational management connection and displayed the configured **Management Server Address**. I initiated a manual **Sync** to test communication between the endpoint and Microsoft Intune, with the **Device sync status** reporting that the sync was successful at **23/08/2026 16:33:57**.
-
-After completing the synchronisation, I returned to the **Microsoft Intune Admin Center** and refreshed the device list. The **Last check-in** for **CLIENT01** had updated from **13:23** to **16:34**, confirming that the device had successfully communicated with Microsoft Intune following the troubleshooting action.
+To verify and restore active communication with Intune, I initiated a manual **Sync** from CLIENT01, with the **Device sync status** confirming that the synchronisation completed successfully at **23/08/2026 16:33:57**. I then returned to the Microsoft Intune Admin Center and refreshed the device record, where the **Last check-in** had updated from **13:23** to **16:34**, confirming successful communication between CLIENT01 and Microsoft Intune.
 
 ---
 
