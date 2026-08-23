@@ -242,3 +242,89 @@ The configuration policy deployment issue was successfully traced to **CLIENT01 
 **Figure 4:** Microsoft Intune showing the regenerated **Device assignment status** report with **CLIENT01** reporting **Assignment status: Success** and **Success: 1**, confirming successful remediation and policy reassignment.
 
 <img width="1919" height="914" alt="11 – Troubleshooting Intune Configuration Policy Deployment" src="https://github.com/user-attachments/assets/ec2d59dc-88f8-4d39-8b50-a156b986b9e9" />
+
+# Task 4 - Troubleshooting an Intune Win32 Application Deployment
+
+## Objective
+
+Investigate and resolve a **Microsoft Intune Win32 application deployment failure** affecting the managed **CLIENT01** Windows device by reviewing the application deployment status, identifying the detection rule responsible for the failure, correcting the configuration, and verifying successful application detection.
+
+---
+
+## Implementation
+
+I investigated a failed deployment of **7-Zip 26.02 (x64 edition)** to **CLIENT01** in Microsoft Intune. The application was assigned to the device, but the **Device install status** reported **Failed** with the status detail indicating that the application was not detected after installation. I reviewed the Win32 application's detection rules and identified an incorrect **MSI product code**, causing Intune to fail its post-installation detection check.
+
+To remediate the issue, I corrected the MSI detection rule from the incorrect product code ending in **00001** to the correct product code ending in **00000** and saved the application configuration. After Intune reevaluated the deployment, the **Device install status** for CLIENT01 changed from **Failed** to **Installed**, confirming that the corrected detection rule successfully resolved the deployment issue.
+
+---
+
+## Navigation
+
+```text
+Microsoft Intune Admin Center
+→ Apps
+→ Windows
+→ Windows apps
+→ 7-Zip 26.02 (x64 edition)
+→ Confirm application is assigned
+
+7-Zip 26.02 (x64 edition)
+→ Monitor
+→ Device install status
+→ CLIENT01
+→ Status: Failed
+→ Status details: The application was not detected after installation completed
+
+7-Zip 26.02 (x64 edition)
+→ Properties
+→ Detection rules
+→ Manually configure detection rules
+→ MSI
+→ Review MSI product code
+→ Incorrect product code ending: 00001
+
+Detection rules
+→ Edit MSI detection rule
+→ Correct MSI product code
+→ Product code ending: 00000
+→ OK
+→ Review + save
+
+7-Zip 26.02 (x64 edition)
+→ Monitor
+→ Device install status
+→ Refresh
+→ CLIENT01
+→ Status: Installed
+```
+
+---
+
+## Outcome
+
+The **7-Zip 26.02 (x64 edition)** deployment failure was successfully traced to an incorrect MSI product code in the application's detection rule. After correcting the detection rule and allowing Intune to reevaluate the deployment, **CLIENT01** changed from **Failed** to **Installed**, confirming successful remediation of the Win32 application deployment issue.
+
+---
+
+## Screenshot
+
+**Figure 1:** Microsoft Intune showing **7-Zip 26.02 (x64 edition)** as a configured **Windows app (Win32)** with **Assigned: Yes**, establishing the application being investigated.
+
+<img width="1918" height="914" alt="12 – Troubleshooting an Intune Win32 Application Deployment" src="https://github.com/user-attachments/assets/ddd92d15-bc77-4ac7-be5d-72da391f0339" />
+
+**Figure 2:** The **7-Zip 26.02 (x64 edition) Device install status** showing **CLIENT01** with a **Failed** status and indicating that the application was not detected after installation, establishing the deployment failure.
+
+<img width="1919" height="914" alt="13 – Troubleshooting an Intune Win32 Application Deployment" src="https://github.com/user-attachments/assets/7c998810-f15c-4820-bd56-bcbdf9fd01bd" />
+
+**Figure 3:** The application's **Detection rules** showing the incorrect MSI product code ending in **00001**, identifying the detection rule responsible for the failed application detection.
+
+<img width="1919" height="914" alt="14 – Troubleshooting an Intune Win32 Application Deployment" src="https://github.com/user-attachments/assets/150b830a-55b3-4747-8aec-192c70c4b1bc" />
+
+**Figure 4:** The corrected **Detection rules** configuration showing the MSI product code ending in **00000**, documenting the remediation applied to the Win32 application.
+
+<img width="1919" height="914" alt="15 – Troubleshooting an Intune Win32 Application Deployment" src="https://github.com/user-attachments/assets/4e599ec1-b5c5-48a2-9c1c-d4cc95733321" />
+
+**Figure 5:** The **7-Zip 26.02 (x64 edition) Device install status** showing **CLIENT01** with a status of **Installed**, confirming successful remediation of the application deployment failure.
+
+<img width="1919" height="913" alt="16 – Troubleshooting an Intune Win32 Application Deployment" src="https://github.com/user-attachments/assets/7ceabcb4-b4bb-48ff-8c56-deb94dce451b" />
