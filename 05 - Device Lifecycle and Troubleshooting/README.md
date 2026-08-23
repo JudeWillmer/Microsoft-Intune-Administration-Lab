@@ -157,6 +157,7 @@ To remediate the issue, I added **CLIENT01** back to the **Windows Devices** sec
 
 ## Navigation
 
+```text
 Microsoft Entra Admin Center
 → Groups
 → All groups
@@ -170,7 +171,9 @@ Microsoft Intune Admin Center
 → Devices
 → Configuration
 → Windows 10-11 - User Experience Configuration
-→ Confirm profile assignment targets Windows Devices
+→ Properties
+→ Assignments
+→ Included group: Windows Devices
 → Device assignment status
 → Generate report
 → Success: 0
@@ -190,6 +193,15 @@ Microsoft Entra Admin Center
 → Refresh
 → Confirm CLIENT01 appears as a direct member
 
+CLIENT01
+→ Settings
+→ Accounts
+→ Access work or school
+→ Workplace or school account
+→ Info
+→ Managed by JayTech
+→ Sync
+
 Microsoft Intune Admin Center
 → Devices
 → Configuration
@@ -203,6 +215,7 @@ Microsoft Intune Admin Center
 → Conflict: 0
 → Pending: 0
 → Total: 1
+```
 
 ---
 
