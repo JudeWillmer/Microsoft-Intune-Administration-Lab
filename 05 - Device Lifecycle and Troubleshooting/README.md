@@ -138,3 +138,96 @@ The **Windows 10-11 - Compliance Policy** error was successfully resolved after 
 **Figure 5:** Microsoft Intune showing **CLIENT01** reporting **Compliant** against the **Windows 10-11 - Compliance Policy**, confirming successful remediation.
 
 <img width="1919" height="915" alt="07 – Troubleshooting an Intune Compliance Policy Error" src="https://github.com/user-attachments/assets/faa48210-a8a6-4234-853a-9d651b27e581" />
+
+# Task 3 - Troubleshooting Intune Configuration Policy Deployment
+
+## Objective
+
+Troubleshoot an **Intune configuration policy deployment issue** affecting the managed **CLIENT01** Windows device by investigating policy targeting, Microsoft Entra group membership, assignment status, and Intune reporting. Identify the root cause, apply the appropriate remediation, and verify that the configuration profile is successfully reassigned to the device.
+
+---
+
+## Implementation
+
+I investigated the deployment of the **Windows 10-11 - User Experience Configuration** profile after CLIENT01 was no longer being targeted by the policy. The configuration profile itself remained assigned to the **Windows Devices** security group, so I investigated the membership of the group in Microsoft Entra ID. The **Windows Devices** group showed **0 members**, confirming that CLIENT01 was no longer a member of the group used to target the Intune configuration profile. I then checked the profile's **Device assignment status** report, which showed **Total: 0**, confirming that no managed devices were currently within scope of the policy assignment.
+
+To remediate the issue, I added **CLIENT01** back to the **Windows Devices** security group and allowed the updated group membership and Intune assignment to propagate. The group membership was verified in Microsoft Entra ID, where CLIENT01 appeared again as a direct member. I then regenerated the Intune **Device assignment status** report to validate the result. The updated report identified CLIENT01 with an **Assignment status of Success**, while the summary showed **Success: 1**, **Pending: 0**, **Not applicable: 0**, **Error: 0**, and **Conflict: 0**, confirming that the configuration profile was once again successfully targeted to the device.
+
+---
+
+## Navigation
+
+Microsoft Entra Admin Center
+→ Groups
+→ All groups
+→ Windows Devices
+→ Members
+→ Direct members
+→ 0 group members found
+→ Confirm CLIENT01 is missing from the assigned group
+
+Microsoft Intune Admin Center
+→ Devices
+→ Configuration
+→ Windows 10-11 - User Experience Configuration
+→ Confirm profile assignment targets Windows Devices
+→ Device assignment status
+→ Generate report
+→ Pending: 0
+→ Not applicable: 0
+→ Success: 0
+→ Error: 0
+→ Conflict: 0
+→ Total: 0
+
+Microsoft Entra Admin Center
+→ Groups
+→ All groups
+→ Windows Devices
+→ Members
+→ Add members
+→ Select CLIENT01
+→ Add
+→ Refresh
+→ Confirm CLIENT01 appears as a direct member
+
+Microsoft Intune Admin Center
+→ Devices
+→ Configuration
+→ Windows 10-11 - User Experience Configuration
+→ Device assignment status
+→ Generate again
+→ CLIENT01
+→ Assignment status: Success
+→ Pending: 0
+→ Not applicable: 0
+→ Success: 1
+→ Error: 0
+→ Conflict: 0
+→ Total: 1
+
+---
+
+## Outcome
+
+The configuration policy deployment issue was successfully diagnosed as an **assignment scope problem caused by CLIENT01 being absent from the Windows Devices security group**, rather than a failure within the configuration profile itself. The Intune assignment report initially showed **Total: 0**, confirming that no devices were within the policy's targeting scope. After CLIENT01 was restored to the **Windows Devices** group and the updated membership propagated to Intune, the configuration profile was successfully reassigned, with the final **Device assignment status** report showing **CLIENT01 – Success**, **Success: 1**, **Error: 0**, **Conflict: 0**, **Pending: 0**, and **Total: 1**. This demonstrates a structured enterprise troubleshooting workflow involving assignment validation, group membership investigation, root cause identification, remediation, and post-remediation verification.
+
+---
+
+## Screenshot
+
+**Figure 1:** Microsoft Entra admin center showing the **Windows Devices** security group with **0 group members found**, identifying that CLIENT01 was missing from the group used to target the Intune configuration profile.
+
+<img width="1919" height="913" alt="08 – Troubleshooting Intune Configuration Policy Deployment" src="https://github.com/user-attachments/assets/2151f7f0-1925-4781-8cc4-9c458f7c6d72" />
+
+**Figure 2:** Microsoft Intune showing the **Windows 10-11 - User Experience Configuration** assignment report with **Total: 0**, confirming that no managed devices were currently within the policy's assignment scope.
+
+<img width="1919" height="912" alt="09 – Troubleshooting Intune Configuration Policy Deployment" src="https://github.com/user-attachments/assets/6fbe2070-8494-4cf9-8000-9798d1c5f859" />
+
+**Figure 3:** Microsoft Entra admin center showing **CLIENT01** restored as a direct member of the **Windows Devices** security group as the remediation for the configuration policy targeting issue.
+
+<img width="1919" height="914" alt="10 – Troubleshooting Intune Configuration Policy Deployment" src="https://github.com/user-attachments/assets/1d0af8be-d341-4187-9e3a-0ae5fbd97a9d" />
+
+**Figure 4:** Microsoft Intune showing the regenerated **Device assignment status** report for the **Windows 10-11 - User Experience Configuration** profile, with **CLIENT01** reporting **Assignment status: Success** and the summary showing **Success: 1, Error: 0, Conflict: 0, Pending: 0, and Total: 1**, confirming successful remediation and policy reassignment.
+
+<img width="1919" height="914" alt="11 – Troubleshooting Intune Configuration Policy Deployment" src="https://github.com/user-attachments/assets/7e9212c4-65aa-41a0-b224-9d19cc332f78" />
