@@ -2,9 +2,9 @@
 
 ## Overview
 
-This section covers the core **Microsoft Entra ID** identity and device enrolment tasks I completed within the **Microsoft Intune Administration Lab**. I created and configured a user account, reviewed **sign-in activity**, configured device settings, created security groups for policy targeting, and enrolled a **Windows 10 Pro** device into **Microsoft Intune**.
+This section covers the core Microsoft Entra ID identity and device enrolment tasks I completed within the Microsoft Intune Administration Lab. I created and configured a user account, reviewed sign-in activity, configured device settings, created security groups for policy targeting, and enrolled a Windows 10 Pro device into Microsoft Intune.
 
-These tasks demonstrate practical **IT Support** skills involving cloud identity administration, user authentication, group management, device registration, and endpoint enrolment within a Microsoft cloud environment.
+These tasks demonstrate practical IT Support skills involving cloud identity administration, user authentication, group management, device registration, and endpoint enrolment within a Microsoft cloud environment.
 
 ---
 
@@ -12,15 +12,15 @@ These tasks demonstrate practical **IT Support** skills involving cloud identity
 
 ## Objective
 
-Create and configure a **Microsoft Entra ID** user account with appropriate organisational information for a new employee within the **JayTech Ltd** environment.
+Create and configure a Microsoft Entra ID user account with appropriate organisational information for a new employee within the JayTech Ltd environment.
 
 ---
 
 ## Implementation
 
-I created a new **Microsoft Entra ID** user account for **Hardy Souza**, who was joining the fictional **JayTech Ltd** environment as an **IT Support Technician**.
+I created a new Microsoft Entra ID user account for Hardy Souza, who was joining the fictional JayTech Ltd environment as an IT Support Technician.
 
-I configured the account as a **Member** and added the user's job title, company, and department information. The **Department** attribute was set to **IT**, providing organisational information that can later be used for group membership and policy targeting.
+I configured the account as a Member and added the user's job title, company, and department information. The Department attribute was set to IT, providing organisational information that can later be used for group membership and policy targeting.
 
 ---
 
@@ -45,13 +45,13 @@ Microsoft Entra Admin Center
 
 ## Outcome
 
-The **Microsoft Entra ID** user account for **Hardy Souza** was successfully created and configured as an **IT Support Technician** within the **IT department** of **JayTech Ltd**.
+The Microsoft Entra ID user account for Hardy Souza was successfully created and configured as an IT Support Technician within the IT department of JayTech Ltd.
 
 ---
 
 ## Screenshot
 
-**Figure 1:** Configuring the **Microsoft Entra ID** user with **IT Support Technician**, **JayTech Ltd**, and **IT department** organisational information.
+**Figure 1:** Configuring the Microsoft Entra ID user with IT Support Technician, JayTech Ltd, and IT department organisational information.
 
 <img width="1919" height="912" alt="01 – Creating and Configuring a Microsoft Entra ID User" src="https://github.com/user-attachments/assets/3bbe2c6e-ad4e-4ffb-85cb-84d7cac8edd3" />
 
@@ -59,17 +59,17 @@ The **Microsoft Entra ID** user account for **Hardy Souza** was successfully cre
 
 ## Objective
 
-Review **Microsoft Entra ID sign-in logs** to verify a user's authentication activity and investigate the status of recent sign-in attempts.
+Review Microsoft Entra ID sign-in logs to verify a user's authentication activity and investigate the status of recent sign-in attempts.
 
 ---
 
 ## Implementation
 
-I signed in using the newly created **Hardy Souza** account and then reviewed the user's **interactive sign-in logs** from the **Microsoft Entra Admin Center**.
+I signed in using the newly created Hardy Souza account and then reviewed the user's interactive sign-in logs from the Microsoft Entra Admin Center.
 
-The logs recorded an initial **Interrupted** sign-in while the new account completed its required authentication process, followed by a **Successful** sign-in. I then opened the successful event to review its authentication details and confirm that access had been completed successfully.
+The logs recorded an initial Interrupted sign-in while the new account completed its required authentication process, followed by a Successful sign-in. I then opened the successful event to review its authentication details and confirm that access had been completed successfully.
 
-The event details also showed that **multifactor authentication** was required and that the MFA requirement had been satisfied by a claim in the authentication token.
+The event details also showed that multifactor authentication was required and that the MFA requirement had been satisfied by a claim in the authentication token.
 
 ---
 
@@ -92,17 +92,17 @@ Microsoft Entra Admin Center
 
 ## Outcome
 
-The **Microsoft Entra ID sign-in logs** confirmed a successful authentication for **Hardy Souza**. Reviewing the individual event provided additional authentication information that could be used by an **IT Support Technician** when investigating user sign-in and access issues.
+The Microsoft Entra ID sign-in logs confirmed a successful authentication for Hardy Souza. Reviewing the individual event provided additional authentication information that could be used by an IT Support Technician when investigating user sign-in and access issues.
 
 ---
 
 ## Screenshot
 
-**Figure 2:** Reviewing **Hardy Souza's interactive sign-in activity**, showing the initial **Interrupted** event followed by a **Successful** authentication.
+**Figure 2:** Reviewing Hardy Souza's interactive sign-in activity, showing the initial Interrupted event followed by a Successful authentication.
 
 <img width="1919" height="914" alt="02 – Reviewing User Sign-In Logs" src="https://github.com/user-attachments/assets/1a3bb924-aeda-4219-9b98-3dbdfda58811" />
 
-**Figure 3:** Reviewing the successful sign-in **Activity Details**, confirming **Status: Success** and the associated **multifactor authentication** requirement.
+**Figure 3:** Reviewing the successful sign-in Activity Details, confirming Status: Success and the associated multifactor authentication requirement.
 
 <img width="1919" height="913" alt="03 – Reviewing User Sign-In Logs" src="https://github.com/user-attachments/assets/a2e0386f-78e5-4c6b-b084-f77358e40c19" />
 
@@ -110,17 +110,17 @@ The **Microsoft Entra ID sign-in logs** confirmed a successful authentication fo
 
 ## Objective
 
-Review and configure **Microsoft Entra ID** device settings to control how users can join devices to the organisation and prepare the environment for future **Microsoft Intune** device enrolment.
+Review and configure Microsoft Entra ID device settings to control how users can join devices to the organisation and prepare the environment for future Microsoft Intune device enrolment.
 
 ---
 
 ## Implementation
 
-I reviewed the **Microsoft Entra join and registration settings** within the **Microsoft Entra admin center** to confirm that users are permitted to join devices to the **JayTech Ltd** environment.
+I reviewed the Microsoft Entra join and registration settings within the Microsoft Entra admin center to confirm that users are permitted to join devices to the JayTech Ltd environment.
 
-Device joining was available to **All users**, while the maximum number of devices permitted per user was set to **50**. I also reviewed the existing **Multifactor Authentication (MFA)** requirement for device registration and joining, which was currently set to **No**.
+Device joining was available to All users, while the maximum number of devices permitted per user was set to 50. I also reviewed the existing Multifactor Authentication (MFA) requirement for device registration and joining, which was currently set to No.
 
-These settings establish the **Microsoft Entra ID** device join configuration that will support the onboarding and management of Windows devices through **Microsoft Intune** later in the lab.
+These settings establish the Microsoft Entra ID device join configuration that will support the onboarding and management of Windows devices through Microsoft Intune later in the lab.
 
 ---
 
@@ -141,13 +141,13 @@ Microsoft Entra Admin Center
 
 ## Outcome
 
-The **Microsoft Entra ID** device settings were successfully reviewed and confirmed, with users permitted to join devices to the **JayTech Ltd** environment. The tenant is now prepared for the later onboarding and management of Windows devices through **Microsoft Intune**.
+The Microsoft Entra ID device settings were successfully reviewed and confirmed, with users permitted to join devices to the JayTech Ltd environment. The tenant is now prepared for the later onboarding and management of Windows devices through Microsoft Intune.
 
 ---
 
 ## Screenshot
 
-**Figure 4:** **Microsoft Entra join and registration settings** configured for the **JayTech Ltd** environment.
+**Figure 4:** Microsoft Entra join and registration settings configured for the JayTech Ltd environment.
 
 <img width="1918" height="915" alt="04 – Configuring Microsoft Entra Device Settings" src="https://github.com/user-attachments/assets/dc7ffb9c-17b7-4159-9cff-c23d2df4e3c5" />
 
@@ -155,17 +155,17 @@ The **Microsoft Entra ID** device settings were successfully reviewed and confir
 
 ## Objective
 
-Create an **assigned security group** in **Microsoft Entra ID** and add the appropriate user as a member to support group-based access and future **Microsoft Intune** policy assignments.
+Create an assigned security group in Microsoft Entra ID and add the appropriate user as a member to support group-based access and future Microsoft Intune policy assignments.
 
 ---
 
 ## Implementation
 
-I created a new **Security** group named **IT Department** within the **JayTech Ltd** Microsoft Entra ID environment and configured the membership type as **Assigned**.
+I created a new Security group named IT Department within the JayTech Ltd Microsoft Entra ID environment and configured the membership type as Assigned.
 
-I assigned **Jude Willmer** as the group owner and manually added **Hardy Souza** as a member of the group. This provides a central method of grouping IT department users rather than managing access and future policy assignments individually.
+I assigned Jude Willmer as the group owner and manually added Hardy Souza as a member of the group. This provides a central method of grouping IT department users rather than managing access and future policy assignments individually.
 
-Using security groups in this way will also allow the **IT Department** group to be used for targeted **Microsoft Intune** configurations and application deployments later in the environment.
+Using security groups in this way will also allow the IT Department group to be used for targeted Microsoft Intune configurations and application deployments later in the environment.
 
 ---
 
@@ -192,7 +192,7 @@ Microsoft Entra Admin Center
 
 ## Outcome
 
-The **IT Department** security group was successfully created in **Microsoft Entra ID** with **Assigned** membership. **Jude Willmer** was configured as the group owner and **Hardy Souza** was assigned as a member, establishing a group that can be used for centralised access management and future **Microsoft Intune** targeting.
+The IT Department security group was successfully created in Microsoft Entra ID with Assigned membership. Jude Willmer was configured as the group owner and Hardy Souza was assigned as a member, establishing a group that can be used for centralised access management and future Microsoft Intune targeting.
 
 ---
 
