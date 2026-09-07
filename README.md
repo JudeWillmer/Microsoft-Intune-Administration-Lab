@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-This repository documents my **Microsoft Intune Administration** lab, where I practised common endpoint management tasks performed by an **IT Support Technician** using Microsoft Intune and Microsoft Entra ID.
+This repository documents my Microsoft Intune Administration lab, where I practised common endpoint management tasks performed by an IT Support Technician using Microsoft Intune and Microsoft Entra ID.
 
-Throughout this project, I enrolled and managed **Windows devices**, configured **device and compliance policies**, implemented **endpoint security controls**, managed application deployment, and worked through common **device management and troubleshooting** scenarios. I also used **Microsoft Entra ID groups** to organise users and devices and assign Intune policies within a cloud-managed environment.
+Throughout this project, I enrolled and managed Windows devices, configured device and compliance policies, implemented endpoint security controls, managed application deployment, and worked through common device management and troubleshooting scenarios. I also used Microsoft Entra ID groups to organise users and devices and assign Intune policies within a cloud-managed environment.
 
 ---
 
