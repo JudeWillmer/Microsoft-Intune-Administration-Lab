@@ -198,11 +198,11 @@ The IT Department security group was successfully created in Microsoft Entra ID 
 
 ## Screenshot
 
-**Figure 5:** **Hardy Souza** selected as a member of the **IT Department** security group during group creation.
+**Figure 5:** Hardy Souza selected as a member of the IT Department security group during group creation.
 
 <img width="1919" height="915" alt="05 – Creating and Managing a Microsoft Entra ID Security Group" src="https://github.com/user-attachments/assets/e266a37b-c635-4590-84dd-7874d860fbe5" />
 
-**Figure 6:** The **IT Department** security group successfully created in **Microsoft Entra ID** with the membership type set to **Assigned**.
+**Figure 6:** The IT Department security group successfully created in Microsoft Entra ID with the membership type set to Assigned.
 
 <img width="1919" height="912" alt="06 – Creating and Managing a Microsoft Entra ID Security Group" src="https://github.com/user-attachments/assets/6268728c-314e-4889-a31a-f65449ba8c0a" />
 
@@ -210,15 +210,15 @@ The IT Department security group was successfully created in Microsoft Entra ID 
 
 ## Objective
 
-Create a **dynamic security group** in **Microsoft Entra ID** that automatically manages membership based on a user's **department** attribute.
+Create a dynamic security group in Microsoft Entra ID that automatically manages membership based on a user's department attribute.
 
 ---
 
 ## Implementation
 
-I created a **Security group** named **IT Department - Dynamic** in Microsoft Entra ID and configured the membership type as **Dynamic User**. I then created a dynamic membership rule using the **department** attribute so that users whose department is set to **IT** are automatically included in the group.
+I created a Security group named IT Department - Dynamic in Microsoft Entra ID and configured the membership type as Dynamic User. I then created a dynamic membership rule using the department attribute so that users whose department is set to IT are automatically included in the group.
 
-This provides a more automated approach to group management, as membership updates based on changes to user attributes within **Microsoft Entra ID**, reducing the need to manually add or remove eligible users.
+This provides a more automated approach to group management, as membership updates based on changes to user attributes within Microsoft Entra ID, reducing the need to manually add or remove eligible users.
 
 The dynamic membership rule used was:
 
@@ -253,17 +253,17 @@ Microsoft Entra Admin Center
 
 ## Outcome
 
-The **IT Department - Dynamic** security group was successfully created with **Dynamic User** membership. Users whose **department** attribute is set to **IT** can now be automatically included in the group through the configured **dynamic membership rule**, reducing the need for manual membership management.
+The IT Department - Dynamic security group was successfully created with Dynamic User membership. Users whose department attribute is set to IT can now be automatically included in the group through the configured dynamic membership rule, reducing the need for manual membership management.
 
 ---
 
 ## Screenshot
 
-**Figure 1:** Creating the **IT Department - Dynamic** security group with **Dynamic User** membership in **Microsoft Entra ID**.
+**Figure 1:** Creating the IT Department - Dynamic security group with Dynamic User membership in Microsoft Entra ID.
 
 <img width="1919" height="912" alt="07 – Creating a Dynamic Security Group" src="https://github.com/user-attachments/assets/04a0d1d0-1c39-429d-814e-372df4f728bb" />
 
-**Figure 2:** Configuring the **dynamic membership rule** to automatically include users whose **department** equals **IT**.
+**Figure 2:** Configuring the dynamic membership rule to automatically include users whose department equals IT.
 
 <img width="1918" height="914" alt="08 – Creating a Dynamic Security Group" src="https://github.com/user-attachments/assets/e06245d0-a8cd-4654-a3d0-8d805872316f" />
 
@@ -271,15 +271,15 @@ The **IT Department - Dynamic** security group was successfully created with **D
 
 ## Objective
 
-Enrol a **Windows 10 Pro device** into **Microsoft Intune** using a standard user account and verify that the endpoint is successfully managed through the **Microsoft Intune Admin Center**.
+Enrol a Windows 10 Pro device into Microsoft Intune using a standard user account and verify that the endpoint is successfully managed through the Microsoft Intune Admin Center.
 
 ---
 
 ## Implementation
 
-I configured **automatic MDM enrolment** in Microsoft Intune for the **IT Department** security group, allowing targeted users to enrol Windows devices for centralised management. On the Windows 10 Pro virtual machine **CLIENT01**, I connected the Microsoft Entra ID account for **Hardy Souza** through **Access work or school**, successfully enrolling the endpoint with Microsoft Intune.
+I configured automatic MDM enrolment in Microsoft Intune for the IT Department security group, allowing targeted users to enrol Windows devices for centralised management. On the Windows 10 Pro virtual machine CLIENT01, I connected the Microsoft Entra ID account for Hardy Souza through Access work or school, successfully enrolling the endpoint with Microsoft Intune.
 
-I verified the enrolment through the **Microsoft Intune Admin Center**, where **CLIENT01** appeared as an Intune-managed device with **Hardy Souza** listed as the primary user. The device also reported a **Compliant** status, confirming that the endpoint was successfully enrolled and communicating with Microsoft Intune.
+I verified the enrolment through the Microsoft Intune Admin Center, where CLIENT01 appeared as an Intune-managed device with Hardy Souza listed as the primary user. The device also reported a Compliant status, confirming that the endpoint was successfully enrolled and communicating with Microsoft Intune.
 
 ---
 
@@ -314,16 +314,16 @@ Microsoft Intune Admin Center
 
 ## Outcome
 
-The **CLIENT01** Windows 10 Pro endpoint was successfully enrolled into **Microsoft Intune**, with **Hardy Souza** associated as the primary user and the device reporting a **Compliant** status. This confirmed successful Windows endpoint onboarding and demonstrated that CLIENT01 was communicating with and centrally managed through Microsoft Intune.
+The CLIENT01 Windows 10 Pro endpoint was successfully enrolled into Microsoft Intune, with Hardy Souza associated as the primary user and the device reporting a Compliant status. This confirmed successful Windows endpoint onboarding and demonstrated that CLIENT01 was communicating with and centrally managed through Microsoft Intune.
 
 ---
 
 ## Screenshot
 
-**Figure 1:** Windows 10 Pro **Access work or school** showing **Hardy Souza's Microsoft Entra ID work account successfully connected** to CLIENT01.
+**Figure 1:** Windows 10 Pro Access work or school showing Hardy Souza's Microsoft Entra ID work account successfully connected to CLIENT01.
 
 <img width="1919" height="914" alt="09 – Enrolling a Windows 10 Pro Device into Microsoft Intune" src="https://github.com/user-attachments/assets/1d88a524-8542-441f-beb3-e1e64d8ba544" />
 
-**Figure 2:** **Microsoft Intune Admin Center > Devices > All devices** showing **CLIENT01** successfully enrolled, **managed by Intune**, associated with **Hardy Souza**, and reporting a **Compliant** status.
+**Figure 2:** Microsoft Intune Admin Center > Devices > All devices showing CLIENT01 successfully enrolled, managed by Intune, associated with Hardy Souza, and reporting a Compliant status.
 
 <img width="1919" height="914" alt="10 – Enrolling a Windows 10 Pro Device into Microsoft Intune" src="https://github.com/user-attachments/assets/f9be9576-e471-4050-958f-0ff070c53a86" />
